@@ -286,16 +286,7 @@ https://modelscope.cn/studios/damo/studio_anytext/summary
     优点：人像人脸面部修复，保持99.9%相似程度，高清修复
     
     🔥Huggingface平台AI应用：https://huggingface.co/spaces/sczhou/CodeFormer
-    
-    - 详情
-        
-        应该顶级还原了，还原保持与原图相似度目前最高
-        
-        解决之前很多还原技术，存在还原的都是同一张脸与原图相似度差距太大的问题
-        
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/4c022827-c9ad-4cce-b0d4-1bbfdcef61ee/Untitled.png)
-        
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/ec4db93e-0f86-491b-b83a-85589ed26c89/Untitled.png)
+ 
         
 47. **PASD 高清修复重绘（照片修复 图片修复 照片重绘 图片重绘）**
     
@@ -304,19 +295,7 @@ https://modelscope.cn/studios/damo/studio_anytext/summary
     
     🔥Huggingface平台AI应用：https://huggingface.co/spaces/fffiloni/PASD
     
-    - 详情
-        
-        应该顶级还原了，还原保持与原图相似度目前最高
-        
-        解决之前很多还原技术，存在还原的都是同一张脸与原图相似度差距太大的问题
-        
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/6becbd92-b44a-4bc9-a9cf-bf581c3a4bab/Untitled.png)
-        
-        ![66001704770088_.pic_hd.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/eea4ccbb-8e41-4778-8a5e-0ed4235149e8/66001704770088_.pic_hd.jpg)
-        
-        ![65981704770038_.pic_hd.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/a2849ca3-eef2-4819-8859-c1484d48dde0/65981704770038_.pic_hd.jpg)
-        
-        ![65961704769975_.pic_hd.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/20baf4b4-df73-47e2-b428-e8b3095d4d84/65961704769975_.pic_hd.jpg)
+ 
         
 48. **Realvisxl-v3.0-turbo 图片增强 真实感（效果第一）**
 优点：无限免费，支持图生图、AI生图
@@ -327,14 +306,7 @@ https://replicate.com/adirik/realvisxl-v3.0-turbo/examples
 优点：免费、可加提示词。
 Replicate ai社区,机器学习平台！每个账号限免费次数，用多帐户即可解决！
 https://replicate.com/batouresearch/high-resolution-controlnet-tile
-    - 详情
-        
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/0472ea92-fafd-4afa-8379-b5c685e9ac09/Untitled.png)
-        
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/e746dfd5-435a-4ce8-8272-45046b4119e0/Untitled.png)
-        
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/282ec860-4351-4023-8765-f9715988eb8d/Untitled.png)
-        
+ 
 50. **AI图像涂抹修改 高分辨率智能生图**
 优点：无限免费，高分辨率、2024.12.27前，混合技术最牛
 简单涂抹区域+提示词=轻松修改高分辨图片
@@ -623,102 +595,7 @@ https://huggingface.co/spaces/HumanAIGC/OutfitAnyone
         
         免费用户（GPU：T4 x2、P100｜TPU： VM V3-8｜ 内存：13 GB｜空间：约20 GB）
         Kaggle官网：https://bit.ly/45BXy9a
-        
-
-            
-                
-            
-            ---
-            
-            ## **然后进行如下操作：**
-            
-            1. 将 Accelerator 改为更快的 GPUT4X2 或者 P100。
-            2. Persistence 设置未 Files only。
-            3. Environment 设置为 Pin to original（这样的好处是能够保证后续运行的代码，不会因为环境的变化而导致出错，如果你对 Python 比较熟悉，那可以设置为 Always use latest environment）。
-            4. 将 Internet 设置为开启。
-            
-            > 注意：Internet 选项一定要设置为开启，如果没有开启，后续代码就无法运行。如果你没看到 Internet 选项，你的 Kaggle 账号可能需要认证一下你的手机号，才能使用该功能。
-            > 
-            
-            ---
-            
-            点开该工作笔记，参考下面设置后安装
-            
    
-   
-             
-            
-                
-            
-            ---
-            
-            ## **运行 Installation 代码**
-            
-            点击 Installation 标题下方的代码，然后你会在左侧看到一个 Run 按钮，点击它，即可运行代码，此时你会发现 Run 变成一个 Stop 按钮。然后你需要等待一段时间，当显示如下代码就证明已经安装完成：
-            
-            > Successfully installed matrix-client-0.4.0
-            > 
-            
-            亦或者你看到 Stop 按钮重新变成 Run 按钮，也代表代码已经运行完成。
-            
-            ---
-            
-            显示以下信息，说明安装成功
-            
-    
-	
-            
-             
-            
-                
-            
-            ---
-            
-            ## **运行 Install a model 代码**
-            
-            接着，跳过 其他，先运行 Install a model 代码，这样后续运行 Start 代码后，就能马上生图了。这样可以节省一些时间。点击 Install a model 标题下方的代码，然后你会在左侧看到一个 Run 按钮，点击它，即可运行代码。然后你需要等待一段时间，当显示如下代码就证明已经安装完成：
-            
-       
-	   
-            ---
-            
-            ## **运行 Start the WebUI 代码**
-            
-            最后点击运行 Start the WebUI 的代码，在运行的过程中，你会看到一个类似这样的，以 moe 结尾的链接：
-            
-            http://ssshdiosaoshagohdaoghdoa.remote.moe/
-            
-            点击该链接，即可进入 ComfyUI 的 WebUI 页面。
-            
-            > 注意：在运行 Start the WebUI 代码后，会持续消耗 GPU 时间。
-            > 
-            
-            ---
-            
-            安装comfyui运行界面
-            
-            
-			
-            
-            显示以下链接，就运行成功，点开链接，就打开comfyui生图页面了
-            
-            
-			
-            
-             打开链接后，就显示comfyui界面
-            
-
-
-                
-            
-            ---
-            
-            # **Q&A**
-            
-            ## **在 start the webui 的地方报 openssl 错误**
-            
-            - 报错代码如下：OpenSSL version mismatch. Built against 30000020, you have 30100040 rm: cannot remove '/root/.ssh/id_rsa': No such file or directory OpenSSL version mismatch. Built against 30000020, you have 30100040 OpenSSL version mismatch. Built against 30000020, you have 30100040 此问题来自 Discord 用户 designwill
-            - Answer from Jimmy: 这种情况是因为你暂停了服务后，想要再次启动服务时，仅重新运行 start the webui 的代码导致的。你需要运行 Installation 代码后，再次运行 start the webui 的代码，就不会报错了。
             
     18. Colab 免费在线Comfy UI｜SD3完整版+T5文本模型｜生图
     优势：一周有30小时的免费 GPU 使用时长｜单次运行时长：12小时｜约90分钟没有活动，自动断开
@@ -726,67 +603,8 @@ https://huggingface.co/spaces/HumanAIGC/OutfitAnyone
         免费用户（GPU：T4、P4、P100｜ 内存：12 GB｜空间：约100 GB）
         Google Colab：https://bit.ly/3z02usy
 
-
-             
+ 
             
-            ---
-            
-            **Fooocus｜juggernaut_xl｜生图**
-            
-
-
-            
-            其他生图模型笔记
-            
-            https://dagshub.com/camenduru/sdxl-colab
-            
-            ---
-            
-            # Colab 免费在线Comfy UI｜SD3完整版+T5文本模型｜生图
-            
-            Google Colab：https://bit.ly/3z02usy
-            
-            步骤1、点第一个代码单元框，运行加载安装ComfyUI，运行完即可生图
-            步骤2、第二个代码单元框，生图设置好点运行生图即可
-
-
-            ---
-            
-            1、项目页面：https://github.com/camenduru/SD3-jupyter
-            或直接点开Colab 上的 ComfyUI-SD3：https://bit.ly/3z02usy
-            步骤1、点第一个代码单元框，运行加载安装ComfyUI，运行完即可生图
-            步骤2、第二个代码单元框，生图设置好点运行生图即可
-            
-
-
-            
-            2、Colab 上先点击第一个代码单元框，加载运行ComfyUI
-            
-    
-	
-            
-            3、出提示点继续
-            
-            
-			
-            
-            4、这图标变成绿色的勾，就是ComfyUI 运行加载完成，下拉填写生图相关设置
-            
-            
-			
-            
-            5、第二个代码单元框，没有UI界面的Comfy UI，参考下面对应设置
-            
-            
-			
-            
-            6、完美，免费无限生图啦！
-            运行T4 GPU，31秒出图
-
-
-               
-            
-            ---
             
     19. 最详细图像反推提示 JoyCaption Pre-Alpha
         
@@ -799,9 +617,7 @@ https://huggingface.co/spaces/HumanAIGC/OutfitAnyone
         
         https://huggingface.co/spaces/gokaygokay/SD3-Long-Captioner
         
-
-
-            
+ 
     21. 单图参考 + 局部重绘 MimicBrush
         
         可以直接从给定的参考图中理解特定内容并将其用于局部重绘：
