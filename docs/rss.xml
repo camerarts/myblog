@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>camerart 的博客</title><link>https://camerarts.github.io/myblog</link><description>Blog description</description><copyright>camerart 的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://camerarts.github.io/myblog</link></image><lastBuildDate>Sun, 13 Oct 2024 03:13:00 +0000</lastBuildDate><managingEditor>camerart 的博客</managingEditor><ttl>60</ttl><webMaster>camerart 的博客</webMaster><item><title>AI绘画</title><link>https://camerarts.github.io/myblog/post/AI-hui-hua.html</link><description>1. PMRF｜人脸修复&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>camerart 的博客</title><link>https://camerarts.github.io/myblog</link><description>Blog description</description><copyright>camerart 的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://camerarts.github.io/myblog</link></image><lastBuildDate>Sun, 13 Oct 2024 03:14:43 +0000</lastBuildDate><managingEditor>camerart 的博客</managingEditor><ttl>60</ttl><webMaster>camerart 的博客</webMaster><item><title>AI图像编辑</title><link>https://camerarts.github.io/myblog/post/AI-tu-xiang-bian-ji.html</link><description>1. PMRF｜人脸修复&#13;
 优点：完全免费&#13;
 https://huggingface.co/spaces/ohayonguy/PMRF&#13;
 &#13;
@@ -100,7 +100,7 @@ https://huggingface.co/spaces/lemonaddie/geowizard&#13;
 &#13;
 19. Freepik Reimagine Ai 图像编辑｜更改任何内容只需添加/更改/删除描述单词&#13;
 优点：每天5次免费，多账号增加免费次数&#13;
-更改 -风格- 任何内容 - 只需添加/更改/删除描述中的单词即可。</description><guid isPermaLink="true">https://camerarts.github.io/myblog/post/AI-hui-hua.html</guid><pubDate>Sun, 13 Oct 2024 03:12:35 +0000</pubDate></item><item><title>AI绘画</title><link>https://camerarts.github.io/myblog/post/AI-hui-hua.html</link><description>#AI绘图&#13;
+更改 -风格- 任何内容 - 只需添加/更改/删除描述中的单词即可。</description><guid isPermaLink="true">https://camerarts.github.io/myblog/post/AI-tu-xiang-bian-ji.html</guid><pubDate>Sun, 13 Oct 2024 03:12:35 +0000</pubDate></item><item><title>AI绘画</title><link>https://camerarts.github.io/myblog/post/AI-hui-hua.html</link><description>#AI绘图&#13;
 1、FLUX.1.1｜生图｜完全免费功能：完全免费，生图、图生图、高清放大、去除背景、Controlnet 完全免费：https://cogniwerk.ai/&#13;
 &#13;
 2、FLUX.1 schnell｜实时生图完全免费：https://www.blinkshot.io/&#13;

@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="1. PMRF｜人脸修复
+优点：完全免费
+https://huggingface.co/spaces/ohayonguy/PMRF
+
+        
+2. AI证件照｜HivisionIDPhotos
+优点：完全免费
+https://huggingface.co/spaces/TheEeeeLin/HivisionIDPhotos
+
+        
+3. 风格转移类似IPA｜RB-Modulation
+优点：完全免费
+https://huggingface.co/spaces/fffiloni/RB-Modulation
+
+
+        
+4. Background Removal｜抠图细到发丝｜镂空抠图
+优点：完全免费、理解复杂图案，支持上传图像抠图
+demo：https://bit.ly/3WPxweY
+
+
+5. Finegrain｜Ai 精准图像清理
+优点：完全免费、Ai 精准图像清理｜手动选择或用提示词
+理解复杂提示，精准自动清理
+demo：https://huggingface.co/spaces/finegrain/finegrain-object-eraser
+
+        
+6. AuraSR v2｜图像高清修复
+优点：完全免费
+https://huggingface.co/spaces/gokaygokay/AuraSR-v2
+ 
+ 
+        
+7. 在线压缩图像并格式转换｜免费无限
+优点：免费无限制，支持批处理一次最多 20 张图像
+https://imgto.xyz/
+ 
+        ---
+        
+8. 在线Ai 绘图｜自动完善线稿细节｜免费无限
+优点：免费无限制
+https://plastic-people.sakura.ne.jp/_kkapp/kkapp2305b/
+ 
+9. Bgbye｜免费抠图｜6个Ai 抠图模型
+优点：免费无限制
+https://fyrean.itch.io/bgbye-background-remover
+  
+优点：免费无限制，场景转移功能（位于增强工具内）
+https://www.krea.ai/apps/image/enhancer
+ 
+ 
+        
+11. BirefNet｜高分辨率 2024 图像抠图
+https://replicate.com/men1scus/birefnet
+  
+        
+     
+        
+12. AuraSR｜超分辨率放大生成图像
+优点：免费无限制、AuraSR 基GAN 超分辨率放大生成图像
+https://huggingface.co/spaces/gokaygokay/AuraSR
+ 
+         
+        
+        ---
+        
+13. Magnific Ai 新功能 Relight 重新打光给产品换背景
+优点：免费可用、产品完美融合并替换背景
+[https://magnific.ai](https://magnific.ai/)
+ 
+        
+14. Hairfastgan AI 换发型
+优点：免费，直接将发型一个图像迁移到另一个图像中的对象上，实现真实且稳健的毛发传输
+https://replicate.com/camenduru/hairfastgan
+ 
+15. ZeST Ai材质迁移
+优点：免费，直接将一种材质从一个图像迁移到另一个图像中的对象上
+https://replicate.com/camenduru/zest
+ 
+        
+16. BrushNet Ai智能编辑（自然与周边环境匹配）
+优点：免费，智能选区，更强局部重绘，通过简单涂抹，自然与周边完美融合，自动匹配自然空间物理规律
+https://huggingface.co/spaces/TencentARC/BrushNet
+在线使用，图像大小有限制（推荐:本地安装，用pinokio浏览器一键安装BrushNet应用）
+
+
+        
+17. REMBG Ai抠图增强版
+优点：免费，目前最精细
+https://replicate.com/smoretalk/rembg-enhance
+
+
+        
+18. Geowizard Ai 图像转深度图
+优点：免费，目前最精细，图像转深度图
+https://replicate.com/camenduru/geowizard
+https://huggingface.co/spaces/lemonaddie/geowizard
+
+
+19. Freepik Reimagine Ai 图像编辑｜更改任何内容只需添加/更改/删除描述单词
+优点：每天5次免费，多账号增加免费次数
+更改 -风格- 任何内容 - 只需添加/更改/删除描述中的单词即可。">
+<meta property="og:title" content="AI图像编辑">
+<meta property="og:description" content="1. PMRF｜人脸修复
+优点：完全免费
+https://huggingface.co/spaces/ohayonguy/PMRF
+
+        
+2. AI证件照｜HivisionIDPhotos
+优点：完全免费
+https://huggingface.co/spaces/TheEeeeLin/HivisionIDPhotos
+
+        
+3. 风格转移类似IPA｜RB-Modulation
+优点：完全免费
+https://huggingface.co/spaces/fffiloni/RB-Modulation
+
+
+        
+4. Background Removal｜抠图细到发丝｜镂空抠图
+优点：完全免费、理解复杂图案，支持上传图像抠图
+demo：https://bit.ly/3WPxweY
+
+
+5. Finegrain｜Ai 精准图像清理
+优点：完全免费、Ai 精准图像清理｜手动选择或用提示词
+理解复杂提示，精准自动清理
+demo：https://huggingface.co/spaces/finegrain/finegrain-object-eraser
+
+        
+6. AuraSR v2｜图像高清修复
+优点：完全免费
+https://huggingface.co/spaces/gokaygokay/AuraSR-v2
+ 
+ 
+        
+7. 在线压缩图像并格式转换｜免费无限
+优点：免费无限制，支持批处理一次最多 20 张图像
+https://imgto.xyz/
+ 
+        ---
+        
+8. 在线Ai 绘图｜自动完善线稿细节｜免费无限
+优点：免费无限制
+https://plastic-people.sakura.ne.jp/_kkapp/kkapp2305b/
+ 
+9. Bgbye｜免费抠图｜6个Ai 抠图模型
+优点：免费无限制
+https://fyrean.itch.io/bgbye-background-remover
+  
+优点：免费无限制，场景转移功能（位于增强工具内）
+https://www.krea.ai/apps/image/enhancer
+ 
+ 
+        
+11. BirefNet｜高分辨率 2024 图像抠图
+https://replicate.com/men1scus/birefnet
+  
+        
+     
+        
+12. AuraSR｜超分辨率放大生成图像
+优点：免费无限制、AuraSR 基GAN 超分辨率放大生成图像
+https://huggingface.co/spaces/gokaygokay/AuraSR
+ 
+         
+        
+        ---
+        
+13. Magnific Ai 新功能 Relight 重新打光给产品换背景
+优点：免费可用、产品完美融合并替换背景
+[https://magnific.ai](https://magnific.ai/)
+ 
+        
+14. Hairfastgan AI 换发型
+优点：免费，直接将发型一个图像迁移到另一个图像中的对象上，实现真实且稳健的毛发传输
+https://replicate.com/camenduru/hairfastgan
+ 
+15. ZeST Ai材质迁移
+优点：免费，直接将一种材质从一个图像迁移到另一个图像中的对象上
+https://replicate.com/camenduru/zest
+ 
+        
+16. BrushNet Ai智能编辑（自然与周边环境匹配）
+优点：免费，智能选区，更强局部重绘，通过简单涂抹，自然与周边完美融合，自动匹配自然空间物理规律
+https://huggingface.co/spaces/TencentARC/BrushNet
+在线使用，图像大小有限制（推荐:本地安装，用pinokio浏览器一键安装BrushNet应用）
+
+
+        
+17. REMBG Ai抠图增强版
+优点：免费，目前最精细
+https://replicate.com/smoretalk/rembg-enhance
+
+
+        
+18. Geowizard Ai 图像转深度图
+优点：免费，目前最精细，图像转深度图
+https://replicate.com/camenduru/geowizard
+https://huggingface.co/spaces/lemonaddie/geowizard
+
+
+19. Freepik Reimagine Ai 图像编辑｜更改任何内容只需添加/更改/删除描述单词
+优点：每天5次免费，多账号增加免费次数
+更改 -风格- 任何内容 - 只需添加/更改/删除描述中的单词即可。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://camerarts.github.io/myblog/post/AI-tu-xiang-bian-ji.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>AI图像编辑</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">AI图像编辑</h1>
+<div class="title-right">
+    <a href="https://camerarts.github.io/myblog" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/camerarts/myblog/issues/5" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><ol>
+<li>
+<p>PMRF｜人脸修复<br>
+优点：完全免费<br>
+<a href="https://huggingface.co/spaces/ohayonguy/PMRF" rel="nofollow">https://huggingface.co/spaces/ohayonguy/PMRF</a></p>
+</li>
+<li>
+<p>AI证件照｜HivisionIDPhotos<br>
+优点：完全免费<br>
+<a href="https://huggingface.co/spaces/TheEeeeLin/HivisionIDPhotos" rel="nofollow">https://huggingface.co/spaces/TheEeeeLin/HivisionIDPhotos</a></p>
+</li>
+<li>
+<p>风格转移类似IPA｜RB-Modulation<br>
+优点：完全免费<br>
+<a href="https://huggingface.co/spaces/fffiloni/RB-Modulation" rel="nofollow">https://huggingface.co/spaces/fffiloni/RB-Modulation</a></p>
+</li>
+<li>
+<p>Background Removal｜抠图细到发丝｜镂空抠图<br>
+优点：完全免费、理解复杂图案，支持上传图像抠图<br>
+demo：<a href="https://bit.ly/3WPxweY" rel="nofollow">https://bit.ly/3WPxweY</a></p>
+</li>
+<li>
+<p>Finegrain｜Ai 精准图像清理<br>
+优点：完全免费、Ai 精准图像清理｜手动选择或用提示词<br>
+理解复杂提示，精准自动清理<br>
+demo：<a href="https://huggingface.co/spaces/finegrain/finegrain-object-eraser" rel="nofollow">https://huggingface.co/spaces/finegrain/finegrain-object-eraser</a></p>
+</li>
+<li>
+<p>AuraSR v2｜图像高清修复<br>
+优点：完全免费<br>
+<a href="https://huggingface.co/spaces/gokaygokay/AuraSR-v2" rel="nofollow">https://huggingface.co/spaces/gokaygokay/AuraSR-v2</a></p>
+</li>
+<li>
+<p>在线压缩图像并格式转换｜免费无限<br>
+优点：免费无限制，支持批处理一次最多 20 张图像<br>
+<a href="https://imgto.xyz/" rel="nofollow">https://imgto.xyz/</a></p>
+<pre class="notranslate"><code class="notranslate"> ---
+</code></pre>
+</li>
+<li>
+<p>在线Ai 绘图｜自动完善线稿细节｜免费无限<br>
+优点：免费无限制<br>
+<a href="https://plastic-people.sakura.ne.jp/_kkapp/kkapp2305b/" rel="nofollow">https://plastic-people.sakura.ne.jp/_kkapp/kkapp2305b/</a></p>
+</li>
+<li>
+<p>Bgbye｜免费抠图｜6个Ai 抠图模型<br>
+优点：免费无限制<br>
+<a href="https://fyrean.itch.io/bgbye-background-remover" rel="nofollow">https://fyrean.itch.io/bgbye-background-remover</a></p>
+</li>
+</ol>
+<p>优点：免费无限制，场景转移功能（位于增强工具内）<br>
+<a href="https://www.krea.ai/apps/image/enhancer" rel="nofollow">https://www.krea.ai/apps/image/enhancer</a></p>
+<ol start="11">
+<li>
+<p>BirefNet｜高分辨率 2024 图像抠图<br>
+<a href="https://replicate.com/men1scus/birefnet" rel="nofollow">https://replicate.com/men1scus/birefnet</a></p>
+</li>
+<li>
+<p>AuraSR｜超分辨率放大生成图像<br>
+优点：免费无限制、AuraSR 基GAN 超分辨率放大生成图像<br>
+<a href="https://huggingface.co/spaces/gokaygokay/AuraSR" rel="nofollow">https://huggingface.co/spaces/gokaygokay/AuraSR</a></p>
+<pre class="notranslate"><code class="notranslate">---
+</code></pre>
+</li>
+<li>
+<p>Magnific Ai 新功能 Relight 重新打光给产品换背景<br>
+优点：免费可用、产品完美融合并替换背景<br>
+<a href="https://magnific.ai/" rel="nofollow">https://magnific.ai</a></p>
+</li>
+<li>
+<p>Hairfastgan AI 换发型<br>
+优点：免费，直接将发型一个图像迁移到另一个图像中的对象上，实现真实且稳健的毛发传输<br>
+<a href="https://replicate.com/camenduru/hairfastgan" rel="nofollow">https://replicate.com/camenduru/hairfastgan</a></p>
+</li>
+<li>
+<p>ZeST Ai材质迁移<br>
+优点：免费，直接将一种材质从一个图像迁移到另一个图像中的对象上<br>
+<a href="https://replicate.com/camenduru/zest" rel="nofollow">https://replicate.com/camenduru/zest</a></p>
+</li>
+<li>
+<p>BrushNet Ai智能编辑（自然与周边环境匹配）<br>
+优点：免费，智能选区，更强局部重绘，通过简单涂抹，自然与周边完美融合，自动匹配自然空间物理规律<br>
+<a href="https://huggingface.co/spaces/TencentARC/BrushNet" rel="nofollow">https://huggingface.co/spaces/TencentARC/BrushNet</a><br>
+在线使用，图像大小有限制（推荐:本地安装，用pinokio浏览器一键安装BrushNet应用）</p>
+</li>
+<li>
+<p>REMBG Ai抠图增强版<br>
+优点：免费，目前最精细<br>
+<a href="https://replicate.com/smoretalk/rembg-enhance" rel="nofollow">https://replicate.com/smoretalk/rembg-enhance</a></p>
+</li>
+<li>
+<p>Geowizard Ai 图像转深度图<br>
+优点：免费，目前最精细，图像转深度图<br>
+<a href="https://replicate.com/camenduru/geowizard" rel="nofollow">https://replicate.com/camenduru/geowizard</a><br>
+<a href="https://huggingface.co/spaces/lemonaddie/geowizard" rel="nofollow">https://huggingface.co/spaces/lemonaddie/geowizard</a></p>
+</li>
+<li>
+<p>Freepik Reimagine Ai 图像编辑｜更改任何内容只需添加/更改/删除描述单词<br>
+优点：每天5次免费，多账号增加免费次数<br>
+更改 -风格- 任何内容 - 只需添加/更改/删除描述中的单词即可。<br>
+<a href="https://www.freepik.com/pikaso/reimagine" rel="nofollow">https://www.freepik.com/pikaso/reimagine</a></p>
+</li>
+<li>
+<p>Real ESRGAN Ai 脸部校正<br>
+优点：免费无限<br>
+<a href="https://replicate.com/juergengunz/real-esrgan-v2" rel="nofollow">https://replicate.com/juergengunz/real-esrgan-v2</a></p>
+</li>
+<li>
+<p>image tune Ai图片自动增强｜一键优化（色彩校正 白平衡 对比度 清晰度）<br>
+优点：免费无限<br>
+<a href="https://replicate.com/vetkastar/image_tune" rel="nofollow">https://replicate.com/vetkastar/image_tune</a></p>
+</li>
+<li>
+<p>Visual Style Prompting 风格提示Ai生图｜支持上传风格参考图生成图像<br>
+优点：免费，上传风格参考图及线稿参考图风格生成图像、<br>
+风格转移、风格迁移、风格转换、风格一致<br>
+Visual Style Prompting风格提示Ai生图｜上传风格参考图及线稿参考图：<a href="https://replicate.com/camenduru/visual-style-prompting-controlnet" rel="nofollow">https://replicate.com/camenduru/visual-style-prompting-controlnet</a><br>
+Visual Style Prompting风格提示Ai生图｜上传风格参考图：<a href="https://huggingface.co/spaces/naver-ai/VisualStylePrompting" rel="nofollow">https://huggingface.co/spaces/naver-ai/VisualStylePrompting</a><br>
+Visual Style Prompting风格提示Ai生图｜上传风格参考图及线稿参考图：<a href="https://huggingface.co/spaces/naver-ai/VisualStylePrompting_Controlnet" rel="nofollow">https://huggingface.co/spaces/naver-ai/VisualStylePrompting_Controlnet</a></p>
+</li>
+<li>
+<p>instant id juggernaut Ai生成人物一致性｜支持上传人脸<br>
+优点：免费<br>
+<a href="https://replicate.com/usamaehsan/instant-id-x-juggernaut" rel="nofollow">https://replicate.com/usamaehsan/instant-id-x-juggernaut</a></p>
+</li>
+<li>
+<p>Profile avatar Ai生成自定人脸及动作｜支持上传人脸及上传人物动作<br>
+优点：免费<br>
+<a href="https://replicate.com/jyoung105/profile-avatar" rel="nofollow">https://replicate.com/jyoung105/profile-avatar</a></p>
+</li>
+<li>
+<p>Stylar Ai 在线图像编辑 ｜智能能填充 文生图 图生图<br>
+优点：免费 （我有6个账号每月免费1200张）图像在智能编辑<br>
+功能：图像涂抹智能填充、文生图、图生图<br>
+<a href="https://www.stylar.ai/canvas?id=10358816" rel="nofollow">https://www.stylar.ai</a></p>
+</li>
+<li>
+<p><strong>Hands-restoration</strong> 图像的手部修复<br>
+优点：免费 图像的手部修复<br>
+<a href="https://replicate.com/973398769/hands-restoration" rel="nofollow">https://replicate.com/973398769/hands-restoration</a></p>
+</li>
+<li>
+<p>SDXL Lightning +Controlnet + Pose 人物生成 手动姿态控制<br>
+SDXL Lightning x Controlnet x Manual Pose Control<br>
+优点：免费 在线控制pose生成人物动作姿势<br>
+<a href="https://www.avatech.ai/streaming" rel="nofollow">https://www.avatech.ai/streaming</a></p>
+</li>
+<li>
+<p>ifoto Ai抠图 细到发丝 ｜AI抠图 AI换脸 AI清理｜免费 每月 1万张（效果第一）<br>
+优点：免费 每月 1万张、AI抠图 AI换脸 AI清理<br>
+<a href="https://www.ifoto.ai/free-background-remover" rel="nofollow">https://www.ifoto.ai/free-background-remover</a></p>
+<pre class="notranslate"><code class="notranslate">---
+</code></pre>
+</li>
+<li>
+<p>face-to-many 将脸部变成 3D、像素、游戏、粘土、玩具<br>
+优点：免费，将脸部变成 3D、像素艺术、视频游戏、粘土或玩具<br>
+demo：<a href="https://replicate.com/fofr/face-to-many" rel="nofollow">https://replicate.com/fofr/face-to-many</a></p>
+</li>
+<li>
+<p>lookscanned pdf 转换成 扫描件样子<br>
+优点：免费<br>
+demo：<a href="https://zh.lookscanned.io/scan" rel="nofollow">https://zh.lookscanned.io/scan</a></p>
+</li>
+<li>
+<p>InsightFaceAI换脸 （添加discord 机器人）<br>
+优点：免费<br>
+添加discord InsightFaceAI换脸 机器人:<a href="https://discord.com/oauth2/authorize?client_id=1090660574196674713&amp;permissions=274877945856&amp;scope=bot" rel="nofollow">https://discord.com/oauth2/authorize?client_id=1090660574196674713&amp;permissions=274877945856&amp;scope=bot</a><br>
+添加discord WYF 机器人(内也有ai换脸功能):<a href="https://discord.gg/bphfacsr" rel="nofollow">https://discord.gg/bphfacsr</a></p>
+</li>
+<li>
+<p>Faceswapper ai AI换脸 gif表情换脸 头像生成<br>
+优点：免费，换脸GIF表情动画（每天免费10积分），无需注册即可在线使用<br>
+<a href="https://faceswapper.ai/swapper" rel="nofollow">https://faceswapper.ai/swapper</a></p>
+</li>
+<li>
+<p>Pixian AI一键抠图 细到发丝（抠图效果目前全网第一）<br>
+优点：免费无限制，一键抠图<br>
+<a href="https://pixian.ai/" rel="nofollow">https://pixian.ai</a></p>
+</li>
+<li>
+<p>Supir 图像高清修复<br>
+优点：免费，上传一张图，用提示词进行高清修复<br>
+在线体验：<a href="https://replicate.com/cjwbw/supir" rel="nofollow">https://replicate.com/cjwbw/supir</a></p>
+</li>
+<li>
+<p>InstantID  AI证件照 人像修复 支持上传头像和姿势参考<br>
+优点：免费，上传一张脸图和一张姿势图，用提示词进行修改人像，8种风格可选<br>
+在线体验：<a href="https://huggingface.co/spaces/InstantX/InstantID" rel="nofollow">https://huggingface.co/spaces/InstantX/InstantID</a><br>
+最快换脸：<a href="https://clipdrop.co/swap" rel="nofollow">https://clipdrop.co/swap</a><br>
+最完美换脸：<a href="https://replicate.com/lucataco/faceswap" rel="nofollow">https://replicate.com/lucataco/faceswap</a></p>
+</li>
+<li>
+<p><strong>Differential Diffusion差分扩散  Ai图像编辑  混合修改</strong><br>
+优点：赋予每个像素以力量 上传一张图，用提示词进行修改混合生成图像<br>
+在线体验：<a href="https://huggingface.co/spaces/exx8/differential-diffusion" rel="nofollow">https://huggingface.co/spaces/exx8/differential-diffusion</a><br>
+介绍：<a href="https://differential-diffusion.github.io/" rel="nofollow">https://differential-diffusion.github.io/</a></p>
+</li>
+<li>
+<p><strong>RMBG v1.4 扣图</strong><br>
+优点：开源、前景和背景分离超越了当前的一切模型<br>
+在线体验：<a href="https://huggingface.co/spaces/briaai/BRIA-RMBG-1.4" rel="nofollow">https://huggingface.co/spaces/briaai/BRIA-RMBG-1.4</a><br>
+本地安装：RMBG-1.4 AI 扣图应用，皮诺曹AI浏览器里有提供</p>
+</li>
+<li>
+<p><strong>MGIE 图像编辑 苹果开源</strong><br>
+优点：Apple 已发布 MGIE，<strong>通过文字提示来编辑任何图像，自然语言理解，</strong><br>
+MGIE可以通过文本命令裁剪，调整大小，旋转，翻转，添加滤镜，添加和删除对象，更改图像的对比度，亮度和颜色<br>
+在线体验：<a href="https://github.com/tsujuifu/pytorch_mgie?tab=readme-ov-file">https://github.com/tsujuifu/pytorch_mgie?tab=readme-ov-file</a><br>
+<a href="https://huggingface.co/spaces/tsujuifu/ml-mgie" rel="nofollow">https://huggingface.co/spaces/tsujuifu/ml-mgie</a></p>
+</li>
+<li>
+<p><strong>AI识别图片详细信息 moondream</strong><br>
+优点：无限免费，当图片转提示词用，上传图片读取详细图片内容及逻辑关系<br>
+<a href="https://huggingface.co/spaces/vikhyatk/moondream1" rel="nofollow">https://huggingface.co/spaces/vikhyatk/moondream1</a></p>
+</li>
+<li>
+<p><strong>AI自动扣图替换编辑图片 ReplaceAnything</strong><br>
+优点：无限免费，当自动扣图用，替换及修改<br>
+<a href="https://huggingface.co/spaces/modelscope/ReplaceAnything" rel="nofollow">https://huggingface.co/spaces/modelscope/ReplaceAnything</a></p>
+</li>
+<li>
+<p><strong>HandRefiner 修复畸形手势</strong></p>
+<p>优点：免费，提示词（一次修复不完美，多生成几次）</p>
+<p>🔥Huggingface平台AI应用：<a href="https://huggingface.co/spaces/fffiloni/HandRefiner" rel="nofollow">https://huggingface.co/spaces/fffiloni/HandRefiner</a></p>
+</li>
+<li>
+<p><strong>Online inpaint AI图片涂抹清理</strong><br>
+优点：免费，在线清理修复图片<br>
+<a href="https://inpaintweb.lxfater.com/" rel="nofollow">https://inpaintweb.lxfater.com/</a></p>
+</li>
+<li>
+<p><strong>DDColor 图像上色</strong><br>
+优点：免费，最新的 SOTA 图像上色算法<br>
+****<a href="https://www.modelscope.cn/models/damo/cv_ddcolor_image-colorization/summary" rel="nofollow">https://www.modelscope.cn/models/damo/cv_ddcolor_image-colorization/summar</a></p>
+</li>
+<li>
+<p><strong>FaceFusion AI换脸（当前最完美换脸技术）</strong></p>
+<p>优点：免费，提供三种，一般用第一种足以<br>
+（当前最完美数字人生成ai应用）安装方法，下载皮诺曹浏览器即可</p>
+<p>FaceFusion 视频及图片AI换脸｜对口型，上传音频+一张图片，让图片说话</p>
+<p><a href="https://clipdrop.co/swap" rel="nofollow">https://clipdrop.co/swap</a></p>
+<p><a href="https://huggingface.co/spaces/PaulBucurestiBerceni/FaceFusion" rel="nofollow">https://huggingface.co/spaces/PaulBucurestiBerceni/FaceFusion</a></p>
+<p><a href="https://huggingface.co/spaces/bing456/FaceFusion" rel="nofollow">https://huggingface.co/spaces/bing456/FaceFusion</a></p>
+</li>
+<li>
+<p><strong>AnyText 支持中文字体生成与编辑</strong><br>
+优点：无限免费，<br>
+1、支持上传图片，涂抹区域生成中英文。<br>
+2、AI生图及涂抹区域控制文字生成位置<br>
+<a href="https://modelscope.cn/studios/damo/studio_anytext/summary" rel="nofollow">https://modelscope.cn/studios/damo/studio_anytext/summary</a></p>
+</li>
+<li>
+<p><strong>CodeFormer：面部修复</strong></p>
+<p>优点：人像人脸面部修复，保持99.9%相似程度，高清修复</p>
+<p>🔥Huggingface平台AI应用：<a href="https://huggingface.co/spaces/sczhou/CodeFormer" rel="nofollow">https://huggingface.co/spaces/sczhou/CodeFormer</a></p>
+<ul>
+<li>
+<p>详情</p>
+<p>应该顶级还原了，还原保持与原图相似度目前最高</p>
+<p>解决之前很多还原技术，存在还原的都是同一张脸与原图相似度差距太大的问题</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9562f2423f31281d56f0acd6c811919c2782a771b428a5d995c9ade662d2ce65/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f34633032323832372d633961642d346363652d623064342d3162626664636566363165652f556e7469746c65642e706e67"><img src="https://camo.githubusercontent.com/9562f2423f31281d56f0acd6c811919c2782a771b428a5d995c9ade662d2ce65/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f34633032323832372d633961642d346363652d623064342d3162626664636566363165652f556e7469746c65642e706e67" alt="Untitled" data-canonical-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/4c022827-c9ad-4cce-b0d4-1bbfdcef61ee/Untitled.png" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1797b9842d86cd1dd86807717b66ae7e087f346cb4c4ce1cf8eb8cb0083f24f9/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f65633464623933652d306638362d343931622d623833612d3835353839656432366338392f556e7469746c65642e706e67"><img src="https://camo.githubusercontent.com/1797b9842d86cd1dd86807717b66ae7e087f346cb4c4ce1cf8eb8cb0083f24f9/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f65633464623933652d306638362d343931622d623833612d3835353839656432366338392f556e7469746c65642e706e67" alt="Untitled" data-canonical-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/ec4db93e-0f86-491b-b83a-85589ed26c89/Untitled.png" style="max-width: 100%;"></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>PASD 高清修复重绘（照片修复 图片修复 照片重绘 图片重绘）</strong></p>
+<p>优点：保持99.9%相似程度，高清修复<br>
+🔥Resolution平台AI应用：<a href="https://replicate.com/lucataco/pasd-magnify" rel="nofollow">https://replicate.com/lucataco/pasd-magnify</a></p>
+<p>🔥Huggingface平台AI应用：<a href="https://huggingface.co/spaces/fffiloni/PASD" rel="nofollow">https://huggingface.co/spaces/fffiloni/PASD</a></p>
+<ul>
+<li>
+<p>详情</p>
+<p>应该顶级还原了，还原保持与原图相似度目前最高</p>
+<p>解决之前很多还原技术，存在还原的都是同一张脸与原图相似度差距太大的问题</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7683f8bc37fc93847adb46cfea0b04b0ece9d7c5240ed32d49a30c48ab7a2c1d/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f36626563626439322d623434612d346263392d613963662d6266353831633361346261622f556e7469746c65642e706e67"><img src="https://camo.githubusercontent.com/7683f8bc37fc93847adb46cfea0b04b0ece9d7c5240ed32d49a30c48ab7a2c1d/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f36626563626439322d623434612d346263392d613963662d6266353831633361346261622f556e7469746c65642e706e67" alt="Untitled" data-canonical-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/6becbd92-b44a-4bc9-a9cf-bf581c3a4bab/Untitled.png" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/083377de692177efe710e5233a76ddae6d96cea4e91473ced215bad701ad9e10/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f65656134636362622d386534312d343737382d386135652d3065643432333531343965382f36363030313730343737303038385f2e7069635f68642e6a7067"><img src="https://camo.githubusercontent.com/083377de692177efe710e5233a76ddae6d96cea4e91473ced215bad701ad9e10/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f65656134636362622d386534312d343737382d386135652d3065643432333531343965382f36363030313730343737303038385f2e7069635f68642e6a7067" alt="66001704770088_.pic_hd.jpg" data-canonical-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/eea4ccbb-8e41-4778-8a5e-0ed4235149e8/66001704770088_.pic_hd.jpg" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/15bbfb91cb6213f9139d177fdc0310f1421b0113037c2f47dedbcd2538fd218b/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f61323834396361332d656566322d343831392d383835392d6331343834643438646465302f36353938313730343737303033385f2e7069635f68642e6a7067"><img src="https://camo.githubusercontent.com/15bbfb91cb6213f9139d177fdc0310f1421b0113037c2f47dedbcd2538fd218b/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f61323834396361332d656566322d343831392d383835392d6331343834643438646465302f36353938313730343737303033385f2e7069635f68642e6a7067" alt="65981704770038_.pic_hd.jpg" data-canonical-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/a2849ca3-eef2-4819-8859-c1484d48dde0/65981704770038_.pic_hd.jpg" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/890e3947e96c8716fc2cf72040e54b6c6aafbbc3e38759bfe30453d297862e15/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f32306261663462342d646637332d343765322d623432382d6538623330393564346438342f36353936313730343736393937355f2e7069635f68642e6a7067"><img src="https://camo.githubusercontent.com/890e3947e96c8716fc2cf72040e54b6c6aafbbc3e38759bfe30453d297862e15/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f32306261663462342d646637332d343765322d623432382d6538623330393564346438342f36353936313730343736393937355f2e7069635f68642e6a7067" alt="65961704769975_.pic_hd.jpg" data-canonical-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/20baf4b4-df73-47e2-b428-e8b3095d4d84/65961704769975_.pic_hd.jpg" style="max-width: 100%;"></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Realvisxl-v3.0-turbo 图片增强 真实感（效果第一）</strong><br>
+优点：无限免费，支持图生图、AI生图<br>
+<a href="https://replicate.com/adirik/realvisxl-v3.0-turbo/examples" rel="nofollow">https://replicate.com/adirik/realvisxl-v3.0-turbo/examples</a></p>
+</li>
+<li>
+<p><strong>HR Controlnet tile 图片增强真实感</strong><br>
+2024.12.27前，真实还原技术中最牛，没有之一！<br>
+优点：免费、可加提示词。<br>
+Replicate ai社区,机器学习平台！每个账号限免费次数，用多帐户即可解决！<br>
+<a href="https://replicate.com/batouresearch/high-resolution-controlnet-tile" rel="nofollow">https://replicate.com/batouresearch/high-resolution-controlnet-tile</a></p>
+<ul>
+<li>
+<p>详情</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/25685871755b949b32f2f5d2e29cd850b257fdd0b578b35ac7d305a9591298ad/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f30343732656139322d666166642d346166612d383337392d6235633638356539616330392f556e7469746c65642e706e67"><img src="https://camo.githubusercontent.com/25685871755b949b32f2f5d2e29cd850b257fdd0b578b35ac7d305a9591298ad/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f30343732656139322d666166642d346166612d383337392d6235633638356539616330392f556e7469746c65642e706e67" alt="Untitled" data-canonical-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/0472ea92-fafd-4afa-8379-b5c685e9ac09/Untitled.png" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/4fe98ff6aacebfc90a65980edb2d5a8a10a988a884766b2866c8480348b9a959/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f65373436646664352d343335612d346365382d383237322d3435303436623431313965302f556e7469746c65642e706e67"><img src="https://camo.githubusercontent.com/4fe98ff6aacebfc90a65980edb2d5a8a10a988a884766b2866c8480348b9a959/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f65373436646664352d343335612d346365382d383237322d3435303436623431313965302f556e7469746c65642e706e67" alt="Untitled" data-canonical-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/e746dfd5-435a-4ce8-8272-45046b4119e0/Untitled.png" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/213f97bc7c1553b734b49fd7990750a34c902dfc0ddc0f73340f9d158895713a/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f32383265633836302d343335312d343032332d383736352d6639373135393838656238642f556e7469746c65642e706e67"><img src="https://camo.githubusercontent.com/213f97bc7c1553b734b49fd7990750a34c902dfc0ddc0f73340f9d158895713a/68747470733a2f2f70726f642d66696c65732d7365637572652e73332e75732d776573742d322e616d617a6f6e6177732e636f6d2f36613732386434302d343961322d346134312d626235322d3431646566323332643837332f32383265633836302d343335312d343032332d383736352d6639373135393838656238642f556e7469746c65642e706e67" alt="Untitled" data-canonical-src="https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/282ec860-4351-4023-8765-f9715988eb8d/Untitled.png" style="max-width: 100%;"></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>AI图像涂抹修改 高分辨率智能生图</strong><br>
+优点：无限免费，高分辨率、2024.12.27前，混合技术最牛<br>
+简单涂抹区域+提示词=轻松修改高分辨图片<br>
+<a href="https://huggingface.co/spaces/PAIR/HD-Painter" rel="nofollow">https://huggingface.co/spaces/PAIR/HD-Painter</a></p>
+<ul>
+<li>详情</li>
+</ul>
+</li>
+<li>
+<p><strong>Krea 实时绘图</strong><br>
+Krea Real-time Drawing<br>
+<a href="https://www.krea.ai" rel="nofollow">https://www.krea.ai</a></p>
+</li>
+<li>
+<p><strong>MagnificAI 高清修复｜产品换背景｜每月免费10分（长久可叠加）</strong><br>
+优点：每月免费10分（长久可叠加），更多免费多账号解决<br>
+<a href="https://magnific.ai" rel="nofollow">https://magnific.ai</a></p>
+</li>
+<li>
+<p><strong>RenderNet 支持生成相同面孔</strong><br>
+RenderNet supports generating the same face<br>
+<a href="https://rendernet.ai" rel="nofollow">https://rendernet.ai</a></p>
+</li>
+<li>
+<p><strong>Google-maxim 图片去模糊 、噪点、雨滴、低光、增强、去雾</strong><br>
+Google-maxim image deblurring, noise, raindrops, low light, enhancement, dehazing<br>
+<a href="https://replicate.com/google-research/maxim" rel="nofollow">https://replicate.com/google-research/maxim</a></p>
+</li>
+<li>
+<p><strong>Hama AI一键去除背景免费</strong><br>
+Hama AI one-click background removal for free<br>
+<a href="https://www.hama.app" rel="nofollow">https://www.hama.app</a></p>
+</li>
+<li>
+<p><strong>Pic Copilot AI抠图</strong><br>
+Pic Copilot AI cutout<br>
+<a href="https://www.piccopilot.com/create?actionType=" rel="nofollow">https://www.piccopilot.com/create?actionType=</a></p>
+</li>
+<li>
+<p><strong>AI换装  AnyDoor-online 支持随意上传</strong></p>
+<p>优点：无限免费，上传随意模特，上传随意衣服，涂抹换装</p>
+<p><a href="https://huggingface.co/spaces/xichenhku/AnyDoor-online" rel="nofollow">https://huggingface.co/spaces/xichenhku/AnyDoor-online</a></p>
+</li>
+<li>
+<p><strong>AI换装 Flair AI Dress Up</strong><br>
+优点：无限免费<br>
+<a href="https://app.flair.ai" rel="nofollow">https://app.flair.ai</a></p>
+</li>
+<li>
+<p><strong>IMAGDressing-v1 AI换装</strong><br>
+功能：完全免费、用提示词、控制服装、脸部、姿势、场景<br>
+<a href="https://sf.dictdoc.site/" rel="nofollow">https://sf.dictdoc.site/</a></p>
+</li>
+<li>
+<p><strong>Outfit Anyone AI换装 ｜新升级</strong><br>
+功能：完全免费、保持衣物细节纹理、图案和形状，不同体型姿势生成逼真试穿效果<br>
+<a href="https://huggingface.co/spaces/HumanAIGC/OutfitAnyone" rel="nofollow">https://huggingface.co/spaces/HumanAIGC/OutfitAnyone</a></p>
+</li>
+</ol>
+<p>排名到此！排名再下属于垃圾就不推荐了！</p>
+<ul>
+<li>
+<p><strong>AI换装</strong></p>
+<ol>
+<li>
+<p>CatVTON AI换装｜支持复杂图案扭曲<br>
+****优点：完全免费｜支持复杂图案扭曲、上传模特及所有服装<br>
+在线使用：<a href="https://huggingface.co/zhengchong/CatVTON" rel="nofollow">https://huggingface.co/zhengchong/CatVTON</a><br>
+项目介绍：<a href="https://github.com/Zheng-Chong/CatVTON?tab=readme-ov-file">https://github.com/Zheng-Chong/CatVTON?tab=readme-ov-file</a><br>
+ComfUI 节点｜ComfUI CatVTON：<a href="https://github.com/chflame163/ComfyUI_CatVTON_Wrapper">https://github.com/chflame163/ComfyUI_CatVTON_Wrapper</a></p>
+</li>
+<li>
+<p>Virtualtryon<strong>AI换装｜支持</strong>上传模特、衣服 上身 下半身 连衣裙<br>
+****优点：无限免费，上传随意模特，上传随意衣服、上身、下半身、连衣裙<br>
+<a href="https://replicate.com/growthmkt/virtualtryon" rel="nofollow">https://replicate.com/growthmkt/virtualtryon</a></p>
+</li>
+<li>
+<p><strong>OOTDiffusion AI换装支持随意上传</strong></p>
+<p>优点：无限免费，上传随意模特，上传随意衣服<br>
+开源项目：<a href="https://github.com/levihsu/OOTDiffusion">https://github.com/levihsu/OOTDiffusion</a><br>
+demo：<a href="https://replicate.com/viktorfa/oot_diffusion" rel="nofollow">https://replicate.com/viktorfa/oot_diffusion</a></p>
+<p>demo2：<a href="https://ootd.ibot.cn/" rel="nofollow">https://ootd.ibot.cn</a></p>
+</li>
+<li>
+<p><strong>AnyDoor-online AI换装 支持随意上传</strong></p>
+<p>优点：无限免费，上传随意模特，上传随意衣服，涂抹换装</p>
+<p><a href="https://huggingface.co/spaces/xichenhku/AnyDoor-online" rel="nofollow">https://huggingface.co/spaces/xichenhku/AnyDoor-online</a></p>
+</li>
+<li>
+<p><strong>Flair AI Dress Up</strong><br>
+Flair AI换装<br>
+<a href="https://app.flair.ai" rel="nofollow">https://app.flair.ai</a></p>
+</li>
+<li>
+<p><strong>Outfit Anyone AI dress-up</strong><br>
+Outfit Anyone AI换装<br>
+<a href="https://huggingface.co/spaces/HumanAIGC/OutfitAnyone" rel="nofollow">https://huggingface.co/spaces/HumanAIGC/OutfitAnyone</a></p>
+</li>
+</ol>
+<p>排名到此！排名再下属于垃圾就不推荐了！</p>
+</li>
+<li>
+<p><strong>AI绘图</strong></p>
+<ol>
+<li>
+<p>FLUX.1.1｜生图｜完全免费<br>
+功能：完全免费，生图、图生图、高清放大、去除背景、Controlnet<br>
+完全免费：<a href="https://cogniwerk.ai/" rel="nofollow">https://cogniwerk.ai/</a></p>
+</li>
+<li>
+<p>FLUX.1 schnell｜实时生图<br>
+完全免费：<a href="https://www.blinkshot.io/" rel="nofollow">https://www.blinkshot.io/</a></p>
+</li>
+<li>
+<p>Nichetensor ｜免费无限制用 MidJourney V6 生图<br>
+优点：完全免费、文生图｜SUPIR高清修复｜图像识别｜MidJourney V6<br>
+<a href="https://app.nichetensor.com/" rel="nofollow">https://app.nichetensor.com/</a></p>
+</li>
+<li>
+<p>Playground Ai设计/Ai绘图<br>
+Playground Ai设计 ：<a href="https://playground.com/design" rel="nofollow">https://playground.com/design</a><br>
+优点：免费、只需像图形设计师一样与它交谈即可<br>
+Playground AI绘图 ：<a href="https://playground.com/create" rel="nofollow">https://playground.com/create</a><br>
+优点：免费、Playground AI绘图｜每天免费1000张</p>
+<pre class="notranslate"><code class="notranslate"> ---
+</code></pre>
+</li>
+<li>
+<p>Mindtown Ai｜FULX Pro生图｜优化提示词<br>
+优点：完全免费、可一键优化提示词，可选Pro或Dev及尺寸<br>
+<a href="https://mindtown.ai/app" rel="nofollow">https://mindtown.ai/app</a></p>
+<pre class="notranslate"><code class="notranslate"> ---
+</code></pre>
+</li>
+<li>
+<p>Google Imagen3 Ai绘图｜+局部重绘功能<br>
+优点：完全免费，用画笔和提示词对图片进行编辑<br>
+<a href="https://bit.ly/3WXBMtV" rel="nofollow">https://bit.ly/3WXBMtV</a></p>
+</li>
+<li>
+<p>LookSwap Ai换装｜无需抠图蒙版<br>
+优点：完全免费｜无需抠图蒙版｜自动取图片上衣服，穿自另一个人<br>
+<a href="https://huggingface.co/spaces/fashn-ai/LookSwap" rel="nofollow">https://huggingface.co/spaces/fashn-ai/LookSwap</a></p>
+</li>
+<li>
+<p>Tost Ai绘图｜新增 LivePortrait<br>
+优点：非盈利｜完全免费，可运行FLUX dev、Kolors生图、LivePortrait<br>
+其他功能：文生视频、音乐｜图像放大｜图像转3D模型<br>
+<a href="https://tost.ai/" rel="nofollow">https://tost.ai/</a></p>
+</li>
+<li>
+<p>FLUX.1 Ai绘图｜Stability AI 核心成员开发<br>
+优点：完全免费，理解复杂提示词｜替代SD3糟糕人体解剖学<br>
+<strong>FLUX.1 pro</strong>：<a href="https://fluxpro.art/" rel="nofollow">https://fluxpro.art/</a><br>
+<strong>FLUX.1 dev</strong>：<a href="https://huggingface.co/spaces/black-forest-labs/FLUX.1-dev" rel="nofollow">https://huggingface.co/spaces/black-forest-labs/FLUX.1-dev</a><br>
+<strong>FLUX.1 schnell</strong>：<a href="https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell" rel="nofollow">https://huggingface.co/spaces/black-forest-labs/FLUX.1-schnell</a><br>
+Colab：<a href="https://colab.research.google.com/drive/1V0g_Vv42UT8n4W0XSEi4j1ZfxECyzR7V?usp=sharing" rel="nofollow">https://colab.research.google.com/drive/1V0g_Vv42UT8n4W0XSEi4j1ZfxECyzR7V?usp=sharing</a><br>
+模型下载：<a href="https://huggingface.co/black-forest-labs/FLUX.1-dev" rel="nofollow">https://huggingface.co/black-forest-labs/FLUX.1-dev</a><br>
+项目地址：<a href="https://github.com/black-forest-labs/flux?tab=readme-ov-file">https://github.com/black-forest-labs/flux?tab=readme-ov-file</a></p>
+</li>
+<li>
+<p>Midjourney Ai绘图｜国内版｜免费生图<br>
+优点：有限免费，多账号解决更多免费<br>
+同步官网最新模型｜功能一致、界面UI人性化<br>
+<a href="https://dy.midjourney9.com/?channel=1544550" rel="nofollow">https://dy.midjourney9.com/?channel=1544550</a></p>
+</li>
+<li>
+<p>Fuzer v0.1｜给产品生成背景<br>
+功能：免费｜产品保持一致，且完美融合背景中<br>
+demo：<a href="https://huggingface.co/spaces/fotographerai/Fai-Fuzer" rel="nofollow">https://huggingface.co/spaces/fotographerai/Fai-Fuzer</a></p>
+</li>
+<li>
+<p>AuraFlow 0.2｜比SD3、dalle3更好｜支持复杂提示及文字生成</p>
+<p>功能：免费｜平替SD3支持复杂提示及文字生成</p>
+<p>demo：<a href="https://huggingface.co/spaces/multimodalart/AuraFlow" rel="nofollow">https://huggingface.co/spaces/multimodalart/AuraFlow</a><br>
+demo：<a href="https://replicate.com/lucataco/aura-flow-v0.2" rel="nofollow">https://replicate.com/lucataco/aura-flow-v0.2</a></p>
+<p>AuraFlow与SD3、Dalle3对比： <a href="https://cloneofsimo.github.io/compare_aura_sd3/" rel="nofollow">https://cloneofsimo.github.io/compare_aura_sd3/</a><br>
+AuraFlow 0.2模型下载：<a href="https://huggingface.co/fal/AuraFlow-v0.2/tree/main" rel="nofollow">https://huggingface.co/fal/AuraFlow-v0.2/tree/main</a><br>
+AuraFlow 图像升级至AuraFlow-v0.2及反推提示词：<br>
+<a href="https://huggingface.co/spaces/gokaygokay/AuraFlow-with-Captioner" rel="nofollow">https://huggingface.co/spaces/gokaygokay/AuraFlow-with-Captioner</a></p>
+<ul>
+<li>
+<p>使用教程</p>
+<ul>
+<li>
+<p>提示词</p>
+<p><strong>Prompt：</strong></p>
+<p>一张引人注目的电影照片捕捉到了公园户外质朴的木桌上放着一杯晶莹剔透、充满活力的橙汁。从玻璃杯中，充满活力的果汁飞溅而出，在空气中优雅地旋转和扭曲，以果汁飞溅形成的优雅、艺术的字体形成“JUICE”一词。玻璃上形成的冷凝水滴象征着凉爽，玻璃旁边摆放着新鲜的橙子，其鲜艳的色彩与桌子的天然木材形成鲜明对比。飞溅的水花中散布着鲜艳的橙色和鲜绿色的叶子，为场景增添了自然的清新感、质感和色彩。背景中，宁静的山脉和远处的山丘营造出一幅风景如画的风景，柔和的模糊效果强调了前景的焦点。温暖的阳光透过树林，照亮了周围的环境，增强了橙汁的新鲜和活力的感觉。这种构图创造了一个视觉上迷人且令人耳目一新的广告，邀请观众在大自然的美景中品味一杯鲜榨橙汁的简单乐趣</p>
+<p>A striking and cinematic photograph captures a crystal-clear glass of extra vibrant orange juice placed on a rustic wooden table outdoors in a park. From the glass, dynamic splashes of extra vibrant juice emanate, swirling and twisting suspended elequently in the air to form the word "JUICE" in an elegant, artistic script formed by juice splashes. droplets of condensation form on the glass to signify coolness, Next to the glass, fresh oranges are arranged, their vibrant colors contrasting with the natural wood of the table. Interspersed within the splashes are vivid pieces of fresh orange and bright green leaves, adding natural freshness and texture and color to the scene. In the background, serene mountains and distant hills create a picturesque landscape, softly blurred to emphasize the focus on the foreground. Warm sunlight filters through the trees, illuminating the setting and enhancing the fresh and invigorating feel of the orange juice. This composition creates a visually captivating and refreshing advertisement that invites viewers to savor the simple pleasures of enjoying a glass of freshly squeezed orange juice amidst nature's beauty</p>
+</li>
+<li>
+<p>提示词</p>
+<p><strong>Prompt：</strong></p>
+<p>一张引人注目的电影照片捕捉到了一杯牛奶完美地放在质朴的木桌上，溅到空中的那一刻。牛奶以优雅的旋转字体形成了“MILK”一词，似乎漂浮在玻璃杯上方，每一滴都悬浮在半空中，晶莹剔透。玻璃上的冷凝水滴象征着寒冷，背景是柔和模糊的舒适厨房场景，温暖的环境光线透过附近的窗户过滤，在整个环境中投射出金色的色调。厨房的微妙细节——复古陶瓷茶壶、盆栽香草植物和格子窗帘——增添了温馨的氛围。动感的飞溅与宁静的背景相结合，创造出视觉上迷人且令人难忘的广告，散发出清新、温暖和简单的家的乐趣。</p>
+<p>A striking and cinematic photograph captures the moment a glass of milk, perfectly placed on a rustic wooden table, sends a splash into the air. The milk forms the word "MILK" in an elegant, swirling script that seems to float just above the glass, each droplet suspended in mid-air with crystal clarity. droplets of condensation on the glass signify coldness, The background is a softly blurred, cozy kitchen scene with warm, ambient lighting filtering through a nearby window, casting a golden hue across the setting. The subtle details of the kitchen—a vintage ceramic teapot, a potted herb plant, and a hint of checkered curtains—add to the homely atmosphere. The combination of the dynamic splash and the serene background creates a visually captivating and memorable advertisement that exudes freshness, warmth, and the simple pleasures of home.</p>
+</li>
+</ul>
+<hr>
+</li>
+</ul>
+</li>
+<li>
+<p>Diffree｜用提示词修改图像</p>
+<p>功能：免费｜保持与原始图像的一致性（光线、色调、颜色等）<br>
+无需绘图盒或遮罩，仅根据文本描述将对象添加到图像中</p>
+<p><a href="https://huggingface.co/spaces/LiruiZhao/Diffree" rel="nofollow">https://huggingface.co/spaces/LiruiZhao/Diffree</a></p>
+<pre class="notranslate"><code class="notranslate"> ---
+</code></pre>
+</li>
+<li>
+<p>NightCafe Ai绘图</p>
+<p>功能：每天免费10张｜智能涂抹修复</p>
+<p><a href="https://creator.nightcafe.studio/?ru=Wuyf789" rel="nofollow">https://creator.nightcafe.studio/?ru=Wuyf789</a></p>
+</li>
+<li>
+<p>Pinokio 浏览器｜一键安装各种 Ai应用｜可共享本机应用<br>
+优点：完全免费，都一键安装各种开源Ai应用，平台提供Ai应用目前最全最新<br>
+可共享本机应用：如将本地ComfyUI应用共享，让知道该URL的任何人都可以连接到你电脑运行使用该应用<br>
+共享时亦可设置密码，限制访问，访问公共URL的用户将看到身份验证提示，他们可输入密码来使用该应用<br>
+<a href="https://pinokio.computer/" rel="nofollow">https://pinokio.computer/</a></p>
+</li>
+<li>
+<p>可图 Kolors 生图（+生成中文字体）｜+中英提示词<br>
+优点：免费无限，支持中英提示词、理解复杂提示、生成中文字体<br>
+项目地址：<a href="https://github.com/Kwai-Kolors/kolors">https://github.com/Kwai-Kolors/kolors</a><br>
+Demo：<a href="https://huggingface.co/spaces/gokaygokay/Kolors" rel="nofollow">https://huggingface.co/spaces/gokaygokay/Kolors</a></p>
+</li>
+<li>
+<p>Meta Ai｜免费生成图像及聊天<br>
+优点：免费无限，Emu v1.4.0 生图模型 + Llama 3 聊天机器人，平替 Chat GPT<br>
+Meta 出品 Emu v1.4.0生图能力媲美Dall E3<br>
+<a href="https://www.meta.ai/" rel="nofollow">https://www.meta.ai</a></p>
+</li>
+<li>
+<p>Auto_undercoat 漫画线稿分图层自动上色<br>
+优势：在线使用、根据线稿自动上色并分好图层<br>
+<a href="https://github.com/mattyamonaca/auto_undercoat">https://github.com/mattyamonaca/auto_undercoat</a></p>
+</li>
+<li>
+<p>Stylar AI 产品换背景｜高清修复｜扩图｜换脸｜草稿生图｜每月免费200分<br>
+优势：产品换背景最牛｜更多免费多账号解决<br>
+<a href="https://www.stylar.ai/?via=yangfeng" rel="nofollow">https://www.stylar.ai/?via=yangfeng</a></p>
+</li>
+<li>
+<p>Rendernet AI 人物一致性｜高清修复｜局部修改｜换装｜换色｜每日免费10分<br>
+优势：人物一致性生成最牛｜更多免费多账号解决<br>
+<a href="https://rendernet.ai/" rel="nofollow">https://rendernet.ai/</a></p>
+</li>
+<li>
+<p>Scenario 高清修复牛｜每月免费500分<br>
+优势：高清修复牛，每月免费500分（30分高清修复1张）<br>
+<a href="https://app.scenario.com/" rel="nofollow">https://app.scenario.com/</a></p>
+</li>
+<li>
+<p>Imgsys 在线生图｜每天免费生成50张<br>
+优势：每天免费生成50张，想免费生成更多，我有6个帐户<br>
+<a href="http://imgsys.org/" rel="nofollow">Imgsys.org</a></p>
+</li>
+<li>
+<p>Kaggle 免费在线Comfy UI｜生图<br>
+优势：一周有30小时的免费 GPU 使用时长｜单次运行时长：9小时｜约30分钟没有活动，自动断开</p>
+<p>免费用户（GPU：T4 x2、P100｜TPU： VM V3-8｜ 内存：13 GB｜空间：约20 GB）<br>
+Kaggle官网：<a href="https://bit.ly/45BXy9a" rel="nofollow">https://bit.ly/45BXy9a</a></p>
+<pre class="notranslate"><code class="notranslate">---
+
+## **然后进行如下操作：**
+
+1. 将 Accelerator 改为更快的 GPUT4X2 或者 P100。
+2. Persistence 设置未 Files only。
+3. Environment 设置为 Pin to original（这样的好处是能够保证后续运行的代码，不会因为环境的变化而导致出错，如果你对 Python 比较熟悉，那可以设置为 Always use latest environment）。
+4. 将 Internet 设置为开启。
+
+&gt; 注意：Internet 选项一定要设置为开启，如果没有开启，后续代码就无法运行。如果你没看到 Internet 选项，你的 Kaggle 账号可能需要认证一下你的手机号，才能使用该功能。
+&gt; 
+
+---
+
+点开该工作笔记，参考下面设置后安装
+
+
+
+ 
+
+    
+
+---
+
+## **运行 Installation 代码**
+
+点击 Installation 标题下方的代码，然后你会在左侧看到一个 Run 按钮，点击它，即可运行代码，此时你会发现 Run 变成一个 Stop 按钮。然后你需要等待一段时间，当显示如下代码就证明已经安装完成：
+
+&gt; Successfully installed matrix-client-0.4.0
+&gt; 
+
+亦或者你看到 Stop 按钮重新变成 Run 按钮，也代表代码已经运行完成。
+
+---
+
+显示以下信息，说明安装成功
+
+
+
+
+ 
+
+    
+
+---
+
+## **运行 Install a model 代码**
+
+接着，跳过 其他，先运行 Install a model 代码，这样后续运行 Start 代码后，就能马上生图了。这样可以节省一些时间。点击 Install a model 标题下方的代码，然后你会在左侧看到一个 Run 按钮，点击它，即可运行代码。然后你需要等待一段时间，当显示如下代码就证明已经安装完成：
+
+
+
+---
+
+## **运行 Start the WebUI 代码**
+
+最后点击运行 Start the WebUI 的代码，在运行的过程中，你会看到一个类似这样的，以 moe 结尾的链接：
+
+http://ssshdiosaoshagohdaoghdoa.remote.moe/
+
+点击该链接，即可进入 ComfyUI 的 WebUI 页面。
+
+&gt; 注意：在运行 Start the WebUI 代码后，会持续消耗 GPU 时间。
+&gt; 
+
+---
+
+安装comfyui运行界面
+
+
+
+
+显示以下链接，就运行成功，点开链接，就打开comfyui生图页面了
+
+
+
+
+ 打开链接后，就显示comfyui界面
+
+
+
+    
+
+---
+
+# **Q&amp;A**
+
+## **在 start the webui 的地方报 openssl 错误**
+
+- 报错代码如下：OpenSSL version mismatch. Built against 30000020, you have 30100040 rm: cannot remove '/root/.ssh/id_rsa': No such file or directory OpenSSL version mismatch. Built against 30000020, you have 30100040 OpenSSL version mismatch. Built against 30000020, you have 30100040 此问题来自 Discord 用户 designwill
+- Answer from Jimmy: 这种情况是因为你暂停了服务后，想要再次启动服务时，仅重新运行 start the webui 的代码导致的。你需要运行 Installation 代码后，再次运行 start the webui 的代码，就不会报错了。
+</code></pre>
+</li>
+<li>
+<p>Colab 免费在线Comfy UI｜SD3完整版+T5文本模型｜生图<br>
+优势：一周有30小时的免费 GPU 使用时长｜单次运行时长：12小时｜约90分钟没有活动，自动断开</p>
+<p>免费用户（GPU：T4、P4、P100｜ 内存：12 GB｜空间：约100 GB）<br>
+Google Colab：<a href="https://bit.ly/3z02usy" rel="nofollow">https://bit.ly/3z02usy</a></p>
+<pre class="notranslate"><code class="notranslate">---
+
+**Fooocus｜juggernaut_xl｜生图**
+
+
+
+
+其他生图模型笔记
+
+https://dagshub.com/camenduru/sdxl-colab
+
+---
+
+# Colab 免费在线Comfy UI｜SD3完整版+T5文本模型｜生图
+
+Google Colab：https://bit.ly/3z02usy
+
+步骤1、点第一个代码单元框，运行加载安装ComfyUI，运行完即可生图
+步骤2、第二个代码单元框，生图设置好点运行生图即可
+
+
+---
+
+1、项目页面：https://github.com/camenduru/SD3-jupyter
+或直接点开Colab 上的 ComfyUI-SD3：https://bit.ly/3z02usy
+步骤1、点第一个代码单元框，运行加载安装ComfyUI，运行完即可生图
+步骤2、第二个代码单元框，生图设置好点运行生图即可
+
+
+
+
+2、Colab 上先点击第一个代码单元框，加载运行ComfyUI
+
+
+
+
+3、出提示点继续
+
+
+
+
+4、这图标变成绿色的勾，就是ComfyUI 运行加载完成，下拉填写生图相关设置
+
+
+
+
+5、第二个代码单元框，没有UI界面的Comfy UI，参考下面对应设置
+
+
+
+
+6、完美，免费无限生图啦！
+运行T4 GPU，31秒出图
+
+
+   
+
+---
+</code></pre>
+</li>
+<li>
+<p>最详细图像反推提示 JoyCaption Pre-Alpha</p>
+<p><a href="https://huggingface.co/spaces/fancyfeast/joy-caption-pre-alpha" rel="nofollow">https://huggingface.co/spaces/fancyfeast/joy-caption-pre-alpha</a></p>
+</li>
+<li>
+<p>图像反推SD3提示词 SD3-Long-Captioner</p>
+<p><a href="https://huggingface.co/spaces/gokaygokay/SD3-Long-Captioner" rel="nofollow">https://huggingface.co/spaces/gokaygokay/SD3-Long-Captioner</a></p>
+</li>
+<li>
+<p>单图参考 + 局部重绘 MimicBrush</p>
+<p>可以直接从给定的参考图中理解特定内容并将其用于局部重绘：<br>
+1、提出全新生成训练框架 MimicBrush<br>
+2、利用自监督学习，增强语义对齐能力</p>
+<p><a href="https://huggingface.co/spaces/xichenhku/MimicBrush" rel="nofollow">https://huggingface.co/spaces/xichenhku/MimicBrush</a></p>
+</li>
+<li>
+<p>SD3 免费在线无限制生图<br>
+文本转图像模型，在图像质量、排版、复杂提示理解和资源效率方面性能大幅提升<br>
+优点：完全免费｜Stable Diffusion 3 Medium，生成速度快，3秒，本地普通电脑生图大概15分钟<br>
+Huggingface 平台：<br>
+<a href="https://huggingface.co/spaces/stabilityai/stable-diffusion-3-medium" rel="nofollow">https://huggingface.co/spaces/stabilityai/stable-diffusion-3-medium</a><br>
+<a href="https://huggingface.co/spaces/ameerazam08/SD-3-Medium-GPU" rel="nofollow">https://huggingface.co/spaces/ameerazam08/SD-3-Medium-GPU</a></p>
+</li>
+</ol>
+<p>Replicate 平台：<br>
+<a href="https://replicate.com/stability-ai/stable-diffusion-3" rel="nofollow">https://replicate.com/stability-ai/stable-diffusion-3</a></p>
+<ol start="23">
+<li>
+<p>GetSalt Ai 原生版在线Comfy UI ｜免费无限用L4显卡，无需排队，运行快、稳定<br>
+<a href="https://bit.ly/3x44bEJ" rel="nofollow">https://bit.ly/3x44bEJ</a></p>
+<p>优点：优点：原生版在线Comfy UI，完全免费部署或直接拖入工作流，免费无限用L4显卡，无需排队，运行快、稳定<br>
+无限生图，支持上传工作流。搜索使用所有节点、生图模型，都无需安装部署。<br>
+支持工作流导出到Discord上变成一个机器人API应用，方便免费无限制使用工作流功能，完美！<br>
+缺点：只能免费无限制用L4显卡</p>
+</li>
+<li>
+<p>Combix 在线ComfyUI 免费无限生图<br>
+<a href="https://bit.ly/4aZYuW6" rel="nofollow">https://bit.ly/4aZYuW6</a>   注册邀请码：d53f4b<br>
+优点：无限生图，支持上传工作流。搜索使用所有节点、生图模型，都无需安装部署。<br>
+缺点：手动安装的节点，都会缺失（仅提供管理器能搜索到的节点）。运行速度随机，时快时慢，不稳定。</p>
+</li>
+<li>
+<p>人物角色一致性｜人脸、服装一致<br>
+Getimg 英伟达最牛Ai 生图模型 Photorealism V2｜超现实<br>
+优点：免费，每月免费生成100张，多账号解决更多免费<br>
+<a href="https://getimg.ai/ref/VW6OtC4cG" rel="nofollow">https://getimg.ai/ref/VW6OtC4cG</a></p>
+</li>
+<li>
+<p>PULID 换脸｜高保真脸特征提取<br>
+优点：免费，根据参考图人脸，生成图像<br>
+<a href="https://replicate.com/zsxkib/pulid" rel="nofollow">https://replicate.com/zsxkib/pulid</a><br>
+<a href="https://getimg.ai/text-to-image" rel="nofollow">https://getimg.ai/text-to-image</a></p>
+</li>
+<li>
+<p>Material-Transfer 材质转移<br>
+优点：免费，根据参考图材质，一键转移到另一张图上<br>
+<a href="https://replicate.com/iordcalin/material-transfer" rel="nofollow">https://replicate.com/iordcalin/material-transfer</a></p>
+</li>
+<li>
+<p>Storydiffusion 人物一致性｜脸、发型、服装<br>
+优点：免费，可以生成人物一致性故事插画<br>
+<a href="https://replicate.com/hvision-nku/storydiffusion" rel="nofollow">https://replicate.com/hvision-nku/storydiffusion</a></p>
+</li>
+<li>
+<p>Stylar AI在线绘图 （每月免费200积分）<br>
+优点：每月免费200积分（多账号解决更多免费积分），可用Stable Diffusion 3<br>
+<a href="https://www.stylar.ai/" rel="nofollow">https://www.stylar.ai/</a></p>
+</li>
+<li>
+<p>SD3 AI绘图<br>
+优点：免费无限制，Stable Diffusion 3<br>
+<a href="https://sdxlturbo.ai/stable-diffusion3" rel="nofollow">https://sdxlturbo.ai/stable-diffusion3</a></p>
+<ul>
+<li>
+<p>使用教程</p>
+<h3>SD 3在线体验</h3>
+<p>1、直接体验，输入提示即可，速度很快：<a href="https://t.co/aTyxODzczk" rel="nofollow">https://t.co/aTyxODzczk</a><br>
+2、抱抱脸体验：<a href="https://t.co/g3rqkT6znT" rel="nofollow">https://t.co/g3rqkT6znT</a></p>
+<p>需要API，申请SD 3 API点这里，很容易申请：<a href="https://t.co/0tkksvB1RL" rel="nofollow">https://t.co/0tkksvB1RL</a></p>
+<p>3、这里有个开源方案，也可以自己部署一个：<a href="https://t.co/UT1Uet0sIQ" rel="nofollow">https://t.co/UT1Uet0sIQ</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Arc2Face 上传一张人脸生成人脸一致人物<br>
+优点：免费无限制、Arc2Face 是一种 ID 条件面部模型，只需嵌入 ArcFace ID，就可以生成不同的、ID 一致的人照片<br>
+demo：<a href="https://huggingface.co/spaces/FoivosPar/Arc2Face" rel="nofollow">https://huggingface.co/spaces/FoivosPar/Arc2Face</a><br>
+（皮诺曹浏览器里也可以本地安装）</p>
+</li>
+<li>
+<p>SemanticPalette Ai 涂抹区域生成图像<br>
+优点：免费无限制、革命性的绘图基于区域的语义控制来生成图像<br>
+demo：<a href="https://huggingface.co/spaces/ironjr/SemanticPalette" rel="nofollow">https://huggingface.co/spaces/ironjr/SemanticPalette</a></p>
+</li>
+<li>
+<p>动漫模型ANIMAGINE XL 3.1 Ai生图<br>
+优点：免费无限制<br>
+demo1：<a href="https://huggingface.co/spaces/cagliostrolab/animagine-xl-3.1" rel="nofollow">https://huggingface.co/spaces/cagliostrolab/animagine-xl-3.1</a></p>
+</li>
+<li>
+<p>PhotoMaker AI 生成人脸一致性｜支持上传一张或几张脸<br>
+优点：免费<br>
+demo1：<a href="https://replicate.com/mbukerepo/photomaker" rel="nofollow">https://replicate.com/mbukerepo/photomaker</a><br>
+demo2：<a href="https://huggingface.co/spaces/TencentARC/PhotoMaker-Style" rel="nofollow">https://huggingface.co/spaces/TencentARC/PhotoMaker-Style</a></p>
+</li>
+<li>
+<p>CGdream AI 生图 参考图支持上传3D 自由调整角度大小<br>
+优点：免费每天10张，快速3D渲染、参考图支持上传3D 自由调整角度大小<br>
+最大优点：根据你的提示词，自动推荐合适的过滤器，你可以理解更精确的风格模型选择，最多可选5个风格混合<br>
+<a href="https://cgdream.ai/" rel="nofollow">https://cgdream.ai/</a></p>
+</li>
+<li>
+<p>Advanced ai QR  Code Art AI 艺术二维码生成<br>
+优点：免费<br>
+demo：<a href="https://replicate.com/qr2ai/advanced_ai_qr_code_art" rel="nofollow">https://replicate.com/qr2ai/advanced_ai_qr_code_art</a></p>
+</li>
+<li>
+<p>Ip-Adapter-FaceID AI生图 上传人脸，生成人脸一致性图<br>
+优点：免费能用，上传一张人脸作为训练，能固定人脸及风格相似性生成人物<br>
+<a href="https://replicate.com/usamaehsan/controlnet-x-ip-adapter-realistic-vision-v5" rel="nofollow">https://replicate.com/usamaehsan/controlnet-x-ip-adapter-realistic-vision-v5</a><br>
+<a href="https://huggingface.co/spaces/multimodalart/Ip-Adapter-FaceID" rel="nofollow">https://huggingface.co/spaces/multimodalart/Ip-Adapter-FaceID</a></p>
+</li>
+<li>
+<p>GLIGEN AI生图 精确位置控制 文本到图像<br>
+优点：免费能用，GLIGEN 只是精准位置控制工具，本身不能生图，需要配合ComfyUI生图<br>
+可以用皮诺曹AI应用浏览器，先安装ComfyUI生图，再安装GLIGEN<br>
+然后先运行ComfyUI，再运行GLIGEN，即可本地使用精准位置控制生成图片了<br>
+pinokio 皮诺曹浏览器下载地址：<a href="https://pinokio.computer/" rel="nofollow">https://pinokio.computer/</a><br>
+Comflowy ****ComfyUI社区 教程 插件及模型免费下载及安装链接教程：<a href="https://www.comflowy.com/zh-CN" rel="nofollow">https://www.comflowy.com/zh-CN</a></p>
+</li>
+<li>
+<p><strong>Sticker From Image</strong> AI 图片转贴纸 文本生成贴纸<br>
+优点：免费能用，图生图、支持提示词，将真实照片的脸转成卡通贴纸风格<br>
+演示：<a href="https://replicate.com/fofr/face-to-sticker" rel="nofollow">https://replicate.com/fofr/face-to-sticker</a><br>
+demo：<a href="https://toolmaker.fermat.app/deck/sticker-maker-d11e98d9-1a91-4aef-b526-5c16c7c93590" rel="nofollow">https://toolmaker.fermat.app/deck/sticker-maker-d11e98d9-1a91-4aef-b526-5c16c7c93590</a></p>
+</li>
+<li>
+<p>Everart AI生图 上传10张产品图训练出产品一致性模型（付费）<br>
+优点：支持3种，自定义模型训练。<br>
+1、风格     2、人物     3、产品对象<br>
+适合电商吧，训练出固定风格一致、人物一致性、产品一致</p>
+</li>
+</ol>
+<p>通过最少10张图，训练出，固定某个产品模型ai绘图<br>
+自定义模型训练要求：<br>
+图片尺寸：每张分辨率至少为 768×768<br>
+图片数量：最少 10 张图像，20-30 是最佳。<br>
+<a href="https://www.everart.ai/" rel="nofollow">https://www.everart.ai/</a></p>
+<ol start="41">
+<li>
+<p>Ideogram 2.0 AI生图<br>
+优点：每天免费100张、和FLUX一样理解复杂提示<br>
+<a href="https://ideogram.ai/" rel="nofollow">https://ideogram.ai</a></p>
+</li>
+<li>
+<p>Playground v3 AI生图 ｜新增：图像反推提示词<br>
+优点：完全免费、能理解复杂自然语言提示<br>
+Playground v3：<a href="https://playgroundai.com/" rel="nofollow">https://playgroundai.com/</a><br>
+Flux Pro 免费生图：<a href="https://fluxpro.art/" rel="nofollow">https://fluxpro.art/</a></p>
+</li>
+</ol>
+<p>多处使用地址<br>
+Poe内添加Playground v2.5机器人：<a href="https://poe.com/" rel="nofollow">https://poe.com/</a><br>
+<a href="https://replicate.com/lucataco/playground-v2.5-1024px-aesthetic" rel="nofollow">https://replicate.com/lucataco/playground-v2.5-1024px-aesthetic</a><br>
+<a href="https://huggingface.co/spaces/playgroundai/playground-v2.5" rel="nofollow">https://huggingface.co/spaces/playgroundai/playground-v2.5</a><br>
+<a href="https://huggingface.co/spaces/AP123/Playground-v2.5" rel="nofollow">https://huggingface.co/spaces/AP123/Playground-v2.5</a><br>
+<a href="https://huggingface.co/spaces/AP123/Playground-v2.5" rel="nofollow">https://huggingface.co/spaces/AP123/Playground-v2.5</a><br>
+Playground v2.5 模型下载：<a href="https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic/tree/main" rel="nofollow">https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic/tree/main</a></p>
+<ol start="43">
+<li>
+<p>Recraft ｜新增：生成样机、智能贴图、无缝贴图<br>
+功能：完全免费，在线设计神器、唯一能生成矢量图及Ai生成式填充效果最佳<br>
+支持AI生成样机图像及贴图、无缝贴图、高质量图片、矢量图，支持矢量格式导出<br>
+<a href="https://app.recraft.ai/projects" rel="nofollow">https://app.recraft.ai/projects</a></p>
+</li>
+<li>
+<p>SDXL-Lightning 最快AI生图<br>
+优点：免费、显著提高了生成过程的速度，一步就能生成高质量图<br>
+Demo：<a href="https://huggingface.co/spaces/AP123/SDXL-Lightning" rel="nofollow">https://huggingface.co/spaces/AP123/SDXL-Lightning</a><br>
+模型下载：<a href="https://huggingface.co/ByteDance/SDXL-Lightning" rel="nofollow">https://huggingface.co/ByteDance/SDXL-Lightning</a></p>
+</li>
+<li>
+<p><strong>Stable Cascade</strong> SD最新模型 快10倍 免费在线Ai绘图<br>
+优点：免费快10倍，计算时将图像压缩了 42 倍，又能准确重建出大图<br>
+<a href="https://huggingface.co/spaces/multimodalart/stable-cascade" rel="nofollow">https://huggingface.co/spaces/multimodalart/stable-cascade</a><br>
+<a href="https://huggingface.co/stabilityai/stable-cascade" rel="nofollow">https://huggingface.co/stabilityai/stable-cascade</a></p>
+</li>
+<li>
+<p><strong>Amazon Titan 亚马逊</strong>免费在线Ai绘图<br>
+优点：免费无限生成，效果匹敌Imagen 2<br>
+<a href="https://aws.amazon.com/cn/bedrock/titan/" rel="nofollow">https://aws.amazon.com/cn/bedrock/titan/</a></p>
+</li>
+<li>
+<p><strong>最稳定 免费用GPT-4V+Dall E3｜Coze 生图</strong><br>
+The most stable and free GPT-4V Dall E3｜Coze Raw Pictures<br>
+<a href="https://coze.com" rel="nofollow">https://coze.com</a></p>
+</li>
+<li>
+<p><strong>AI换装 Flair AI Dress Up</strong><br>
+<a href="https://app.flair.ai" rel="nofollow">https://app.flair.ai</a></p>
+</li>
+<li>
+<p><strong>Playground 每天免费1000张</strong><br>
+Playground 1000 free pictures every day<br>
+<a href="https://playground.com" rel="nofollow">https://playground.com</a></p>
+</li>
+<li>
+<p><strong>Realvisxl-v3.0-turbo 图片增强 真实感（效果第一）</strong><br>
+优点：无限免费，支持图生图、AI生图<br>
+<a href="https://replicate.com/adirik/realvisxl-v3.0-turbo/examples" rel="nofollow">https://replicate.com/adirik/realvisxl-v3.0-turbo/examples</a></p>
+<ul>
+<li>
+<p>使用教程</p>
+<p>1、提示词+上传图片，设置与原图差距小点，</p>
+<p>2、Prompt Strength：0.05（相似度差距设置越小与原图越相似）</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>GoogleT5 SDXL 5秒4张 高质量</strong><br>
+GoogleT5 SDXL 4 high-quality images in 5 seconds<br>
+<a href="https://huggingface.co/spaces/google/sdxl" rel="nofollow">https://huggingface.co/spaces/google/sdxl</a></p>
+</li>
+<li>
+<p><strong>Distillery 平替MJ画质</strong><br>
+Distillery Match MJ image quality<br>
+<a href="https://discord.com/invite/9HqNh2Q7tT" rel="nofollow">https://discord.com/invite/9HqNh2Q7tT</a></p>
+</li>
+<li>
+<p><strong>CGDream | AI绘图 免费</strong><br>
+CGDream | Free AI drawing<br>
+<a href="https://www.cgdream.ai/my-images" rel="nofollow">https://www.cgdream.ai/my-images</a></p>
+</li>
+<li>
+<p><strong>Fooocus 2.1 平替 MJ AI绘图</strong><br>
+Fooocus 2.1 Match Midjourney AI drawing<br>
+<a href="https://huggingface.co/spaces/SpacesExamples/Fooocus" rel="nofollow">https://huggingface.co/spaces/SpacesExamples/Fooocus</a></p>
+</li>
+<li>
+<p><strong>Stable Diffusion Web 全功能文生图</strong><br>
+Stable Diffusion Web Full-featured Wensheng Picture<br>
+<a href="https://huggingface.co/spaces/camenduru-com/webui-docker" rel="nofollow">https://huggingface.co/spaces/camenduru-com/webui-docker</a></p>
+</li>
+<li>
+<p><strong>Google-aligned SDXL平替MJ画质</strong><br>
+Google -aligned SDXL<br>
+<a href="https://huggingface.co/spaces/ysharma/style-aligned_sdxl" rel="nofollow">https://huggingface.co/spaces/ysharma/style-aligned_sdxl</a></p>
+</li>
+<li>
+<p><strong>Leonardo 实时绘图 高画质</strong><br>
+Leonardo real-time drawing high quality<br>
+<a href="https://leonardo.ai" rel="nofollow">https://leonardo.ai</a></p>
+</li>
+<li>
+<p>1<strong>Kandinsky 3.0 AI生图 图生图（平替MJ）</strong><br>
+优点：无限免费，支持图生图、AI生图<br>
+当SDXL增强版、更好理解自然语言！</p>
+<p><strong>FusionBrain.Al （Kandinsky 3官网）</strong></p>
+<p>优点：<strong>完全免费 不限制使用次数</strong></p>
+<p><a href="https://fusionbrain.ai/" rel="nofollow">https://fusionbrain.ai</a></p>
+</li>
+<li>
+<p><strong>InstantID 图生图（上传图片生成8种风格变体）</strong><br>
+优点：无限免费，支持图生图、提示词</p>
+<p><a href="https://huggingface.co/spaces/InstantX/InstantID" rel="nofollow">https://huggingface.co/spaces/InstantX/InstantID</a></p>
+</li>
+</ol>
+</li>
+</ul></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://camerarts.github.io/myblog">camerart 的博客</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","camerarts/myblog");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+
+
+</html>
