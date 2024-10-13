@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>camerart 的博客</title><link>https://camerarts.github.io/myblog</link><description>Blog description</description><copyright>camerart 的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://camerarts.github.io/myblog</link></image><lastBuildDate>Sun, 13 Oct 2024 03:14:43 +0000</lastBuildDate><managingEditor>camerart 的博客</managingEditor><ttl>60</ttl><webMaster>camerart 的博客</webMaster><item><title>AI图像编辑</title><link>https://camerarts.github.io/myblog/post/AI-tu-xiang-bian-ji.html</link><description>1. PMRF｜人脸修复&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>camerart 的博客</title><link>https://camerarts.github.io/myblog</link><description>Blog description</description><copyright>camerart 的博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://camerarts.github.io/myblog</link></image><lastBuildDate>Sun, 13 Oct 2024 03:21:11 +0000</lastBuildDate><managingEditor>camerart 的博客</managingEditor><ttl>60</ttl><webMaster>camerart 的博客</webMaster><item><title>AI语音模型</title><link>https://camerarts.github.io/myblog/post/AI-yu-yin-mo-xing.html</link><description>- **AI语言模型**&#13;
+    &#13;
+    &#13;
+    1. Hume Ai｜语音聊天｜超快无延迟｜理解你的语气，生成任何语气&#13;
+    功能：免费｜超快无延迟，和真人聊天基本一样，理解你的语气，生成任何语气&#13;
+    例如更改语速或说唱。</description><guid isPermaLink="true">https://camerarts.github.io/myblog/post/AI-yu-yin-mo-xing.html</guid><pubDate>Sun, 13 Oct 2024 03:20:38 +0000</pubDate></item><item><title>AI图像编辑</title><link>https://camerarts.github.io/myblog/post/AI-tu-xiang-bian-ji.html</link><description>1. PMRF｜人脸修复&#13;
 优点：完全免费&#13;
 https://huggingface.co/spaces/ohayonguy/PMRF&#13;
 &#13;
