@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="# AI声音
+    
+    
+    1. Fish Audio 克隆声音｜文转语音｜每天50次
+    功能：每天50次｜支持上传30语音克隆声音、文字转语音
+    https://fish.audio/train/new-model/
+
+            
+    2. Elevenlabs Ai｜支持视频、音频，声音翻译保留原始人声语气特征
+    优点：免费10分钟/月｜视频声音翻译｜声音克隆｜文生声音｜保留人声特征
+    https://elevenlabs.io
+   
+    3. VocalRemover 人声分离
+        
+        功能：免费｜人声和背景音乐分离、鼓声分离
+        
+        https://vocalremover.media.io/app/
+        
+
+            
+    4. Udio Ai歌曲｜每月免费1200首｜支持中英日等｜免费用户可商用
+        
+        功能：每月免费1200首｜Suno的强劲对手
+        
+        https://www.udio.com/
+
+
+            
+    5. Suno AI歌曲｜每天免费10首｜支持中英日等｜付费用户可商用
+        
+        优点：每天免费10首｜支持中文英文 纯音乐等｜可输出4分钟
+        https://suno.com/
+        
+        - 使用教程
+            
+
+            
+    6. Stable Audio 2.0 Ai音乐｜每月免费10首｜不支持人声
+        
+        功能：每月免费10首｜高质量完整曲目结构连贯、长3分钟
+        
+        https://stableaudio.com/
+        
+        - 使用教程
+            
+            
+            [twittervid.com_lazukars_8513ac.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/22b9c802-2c44-459a-8637-2456b5b592e6/twittervid.com_lazukars_8513ac.mp4)
+            
+            ---
+            
+             
+            
+             
+            
+            ---
+            
+    7. FoleyCrafter：可理解视频内容｜精准自动配音
+        
+        价值：完全免费｜可理解视频内容，精准自动匹配声音，生成清晰逼真声音
+        
+        https://huggingface.co/spaces/ymzhang319/FoleyCrafter
+        
+        - 使用教程
+            
+            
+            ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/ddad336c-1311-46bc-9cd5-65d11851a788/Untitled.png)
+            
+            ---
+            
+             
+            
+             
+            
+            ---
+            
+    8. Topmediai 免费用自己声音 Ai翻唱任何歌曲
+        
+        优点：有限免费｜克隆自己声音、Ai翻唱、文字生成语音
+        
+        https://www.topmediai.com/app/ai-cover/
+        
+        - 使用教程
+            
+            **创建克隆声音**
+            克隆自己声音：上传音频时长：10-30 分钟
+            
+            ---
+            
+             **创建克隆自己声音**
+            
+            ![iShot_2024-07-11_20.59.21.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/e5d9f614-d1f8-4f4b-85dd-b0c445f5dce4/iShot_2024-07-11_20.59.21.png)
+            
+             现在可以**用自己的聲音來翻唱任何歌曲**
+            
+            ![iShot_2024-07-11_20.59.31.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/6d6fd44c-2bbc-48a1-8f97-131c6b3b3371/iShot_2024-07-11_20.59.31.png)
+            
+            ---
+            
+            ---
+            
+             
+            
+             
+            
+            ---
+            
+    9. Fish Speech 免费生成语音或克隆声音
+        
+        优点：免费无限制｜语音处理接近人类水平，持中英日语言TTS 模型
+        
+        https://fish.audio/
+        
+
+            
+
+            
+    10. ChatTTS  文本转语音 支持中英文 目前最逼真
+        
+        优点：免费｜支持英文和中文两种语言，生成的语音效果自然、非常逼真、非常牛。">
+<meta property="og:title" content="AI声音">
+<meta property="og:description" content="# AI声音
+    
+    
+    1. Fish Audio 克隆声音｜文转语音｜每天50次
+    功能：每天50次｜支持上传30语音克隆声音、文字转语音
+    https://fish.audio/train/new-model/
+
+            
+    2. Elevenlabs Ai｜支持视频、音频，声音翻译保留原始人声语气特征
+    优点：免费10分钟/月｜视频声音翻译｜声音克隆｜文生声音｜保留人声特征
+    https://elevenlabs.io
+   
+    3. VocalRemover 人声分离
+        
+        功能：免费｜人声和背景音乐分离、鼓声分离
+        
+        https://vocalremover.media.io/app/
+        
+
+            
+    4. Udio Ai歌曲｜每月免费1200首｜支持中英日等｜免费用户可商用
+        
+        功能：每月免费1200首｜Suno的强劲对手
+        
+        https://www.udio.com/
+
+
+            
+    5. Suno AI歌曲｜每天免费10首｜支持中英日等｜付费用户可商用
+        
+        优点：每天免费10首｜支持中文英文 纯音乐等｜可输出4分钟
+        https://suno.com/
+        
+        - 使用教程
+            
+
+            
+    6. Stable Audio 2.0 Ai音乐｜每月免费10首｜不支持人声
+        
+        功能：每月免费10首｜高质量完整曲目结构连贯、长3分钟
+        
+        https://stableaudio.com/
+        
+        - 使用教程
+            
+            
+            [twittervid.com_lazukars_8513ac.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/22b9c802-2c44-459a-8637-2456b5b592e6/twittervid.com_lazukars_8513ac.mp4)
+            
+            ---
+            
+             
+            
+             
+            
+            ---
+            
+    7. FoleyCrafter：可理解视频内容｜精准自动配音
+        
+        价值：完全免费｜可理解视频内容，精准自动匹配声音，生成清晰逼真声音
+        
+        https://huggingface.co/spaces/ymzhang319/FoleyCrafter
+        
+        - 使用教程
+            
+            
+            ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/ddad336c-1311-46bc-9cd5-65d11851a788/Untitled.png)
+            
+            ---
+            
+             
+            
+             
+            
+            ---
+            
+    8. Topmediai 免费用自己声音 Ai翻唱任何歌曲
+        
+        优点：有限免费｜克隆自己声音、Ai翻唱、文字生成语音
+        
+        https://www.topmediai.com/app/ai-cover/
+        
+        - 使用教程
+            
+            **创建克隆声音**
+            克隆自己声音：上传音频时长：10-30 分钟
+            
+            ---
+            
+             **创建克隆自己声音**
+            
+            ![iShot_2024-07-11_20.59.21.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/e5d9f614-d1f8-4f4b-85dd-b0c445f5dce4/iShot_2024-07-11_20.59.21.png)
+            
+             现在可以**用自己的聲音來翻唱任何歌曲**
+            
+            ![iShot_2024-07-11_20.59.31.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/6d6fd44c-2bbc-48a1-8f97-131c6b3b3371/iShot_2024-07-11_20.59.31.png)
+            
+            ---
+            
+            ---
+            
+             
+            
+             
+            
+            ---
+            
+    9. Fish Speech 免费生成语音或克隆声音
+        
+        优点：免费无限制｜语音处理接近人类水平，持中英日语言TTS 模型
+        
+        https://fish.audio/
+        
+
+            
+
+            
+    10. ChatTTS  文本转语音 支持中英文 目前最逼真
+        
+        优点：免费｜支持英文和中文两种语言，生成的语音效果自然、非常逼真、非常牛。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://camerarts.github.io/myblog/post/AI-sheng-yin.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>AI声音</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">AI声音</h1>
+<div class="title-right">
+    <a href="https://camerarts.github.io/myblog" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/camerarts/myblog/issues/9" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h1>AI声音</h1>
+<pre class="notranslate"><code class="notranslate">1. Fish Audio 克隆声音｜文转语音｜每天50次
+功能：每天50次｜支持上传30语音克隆声音、文字转语音
+https://fish.audio/train/new-model/
+
+        
+2. Elevenlabs Ai｜支持视频、音频，声音翻译保留原始人声语气特征
+优点：免费10分钟/月｜视频声音翻译｜声音克隆｜文生声音｜保留人声特征
+https://elevenlabs.io
+
+3. VocalRemover 人声分离
+    
+    功能：免费｜人声和背景音乐分离、鼓声分离
+    
+    https://vocalremover.media.io/app/
+    
+
+        
+4. Udio Ai歌曲｜每月免费1200首｜支持中英日等｜免费用户可商用
+    
+    功能：每月免费1200首｜Suno的强劲对手
+    
+    https://www.udio.com/
+
+
+        
+5. Suno AI歌曲｜每天免费10首｜支持中英日等｜付费用户可商用
+    
+    优点：每天免费10首｜支持中文英文 纯音乐等｜可输出4分钟
+    https://suno.com/
+    
+    - 使用教程
+        
+
+        
+6. Stable Audio 2.0 Ai音乐｜每月免费10首｜不支持人声
+    
+    功能：每月免费10首｜高质量完整曲目结构连贯、长3分钟
+    
+    https://stableaudio.com/
+    
+    - 使用教程
+        
+        
+        [twittervid.com_lazukars_8513ac.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/22b9c802-2c44-459a-8637-2456b5b592e6/twittervid.com_lazukars_8513ac.mp4)
+        
+        ---
+        
+         
+        
+         
+        
+        ---
+        
+7. FoleyCrafter：可理解视频内容｜精准自动配音
+    
+    价值：完全免费｜可理解视频内容，精准自动匹配声音，生成清晰逼真声音
+    
+    https://huggingface.co/spaces/ymzhang319/FoleyCrafter
+    
+    - 使用教程
+        
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/ddad336c-1311-46bc-9cd5-65d11851a788/Untitled.png)
+        
+        ---
+        
+         
+        
+         
+        
+        ---
+        
+8. Topmediai 免费用自己声音 Ai翻唱任何歌曲
+    
+    优点：有限免费｜克隆自己声音、Ai翻唱、文字生成语音
+    
+    https://www.topmediai.com/app/ai-cover/
+    
+    - 使用教程
+        
+        **创建克隆声音**
+        克隆自己声音：上传音频时长：10-30 分钟
+        
+        ---
+        
+         **创建克隆自己声音**
+        
+        ![iShot_2024-07-11_20.59.21.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/e5d9f614-d1f8-4f4b-85dd-b0c445f5dce4/iShot_2024-07-11_20.59.21.png)
+        
+         现在可以**用自己的聲音來翻唱任何歌曲**
+        
+        ![iShot_2024-07-11_20.59.31.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/6d6fd44c-2bbc-48a1-8f97-131c6b3b3371/iShot_2024-07-11_20.59.31.png)
+        
+        ---
+        
+        ---
+        
+         
+        
+         
+        
+        ---
+        
+9. Fish Speech 免费生成语音或克隆声音
+    
+    优点：免费无限制｜语音处理接近人类水平，持中英日语言TTS 模型
+    
+    https://fish.audio/
+    
+
+        
+
+        
+10. ChatTTS  文本转语音 支持中英文 目前最逼真
+    
+    优点：免费｜支持英文和中文两种语言，生成的语音效果自然、非常逼真、非常牛。
+    
+    在线免费使用：https://chattts.com/或https://huggingface.co/spaces/Dzkaka/ChatTTS
+
+11. OpenVoice  语音克隆/文本转语音
+    
+    优点：免费｜支持根据上传参考音频，语音克隆 + 文本转语音
+    
+    能对声音风格的精细控制，包括情感、口音、节奏、停顿和语调，同时能够复制参考发言者的音色。
+    
+
+        
+12. MeloTTS  文本转语音
+    
+    优点：免费｜支持多语言的文本转语音库
+    
+    https://huggingface.co/spaces/mrfakename/MeloTTS
+    
+    - 使用教程
+        
+        ### **在什么样的情况下会使用MeloTTS?**
+        
+        1. **多语言项目：** 如果你在做一个需要支持多国语言的项目，比如一个国际网站或者应用，MeloTTS能帮你轻松实现不同语言的语音输出。
+        2. **内容创作：** 对于内容创作者来说，MeloTTS可以帮助你把文章或博客转换成语音形式，增加内容的互动性和可访问性。
+        3. **教育目的：** 在教学过程中，尤其是语言学习中，MeloTTS可以作为一个有用的工具，帮助学习者听到正确的发音和语调。
+        4. **开发智能助手：** 如果你在开发一个智能助手或聊天机器人，MeloTTS能让它“说”出来，提升用户体验。
+        5. **无障碍服务：** 对于视力受限的用户，MeloTTS可以帮助他们“听”网页或者应用里的内容，提高信息的可达性
+        
+
+        
+13. Seamless expressive AI声音翻译｜把中文音频翻译成英文并保留语气风格
+    
+    优点：免费，上传音频文件，翻译各种语言并保留原有语气风格韵律
+    https://replicate.com/adirik/seamless-expressive
+
+        
+14. 中文视频转英文视频声音 免费能用
+subtitleedit字幕翻译 中文字幕转英文字幕：https://nikse.dk/subtitleedit/online
+   
+15. ZETA Editing AI声音转换编辑（上传：猫叫声，提示词，例：转成狗叫声）
+    
+    优点：免费，上传音频，上传：猫叫声。编辑提示词，例：狗叫声
+    Demo：https://replicate.com/lucataco/zeta-editing
+    
+    - 使用教程
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/292f6e85-8e6d-43ee-8758-a345905266e8/Untitled.png)
+        
+16. **Video to SoundFX 上传**视频自动配音，可编辑提示词
+    
+    **优点：免费，上传**视频自动配音，可编辑提示词，可选声音模型
+    Demo：https://crypto-code.github.io/M2UGen-Demo/
+    
+
+17. M2UGen 文本、图像、视频到音乐自动生成
+    
+    **优点：免费ai文本到音乐生成、图像到音乐生成、视频到音乐生成**
+    
+    开源：https://github.com/shansongliu/M2UGen
+    Demo：https://crypto-code.github.io/M2UGen-Demo/
+    
+
+        
+18. **Splash Ai音乐生成 自动匹配视频长度
+优点：免费ai提示词生成音乐，自动匹配视频长度，最长3分钟，**
+https://pro.splashmusic.com/
+
+        
+19. Image2SFX AI声音生成自动匹配图片
+**优点：免费，上传一张图片即可生成一段音频匹配**
+https://huggingface.co/spaces/fffiloni/Image2SFX-comparison
+
+        
+20. **GPT-SoVITS ****AI声音克隆**（效果第一）**
+支持克隆中文音色完美，而且没有那种老外说中文的口音。
+**优点：免费支持中文、上传一段音频，输入文字，即可克隆**
+https://huggingface.co/spaces/litagin/gpt_sovits_demo
+
+        
+21. MAGNeT 文本到音乐和文本到声音**（效果第一）
+优点：免费 Meta开发、提示词生成音乐及各种声音
+在线演示：**https://huggingface.co/spaces/fffiloni/MAGNet
+本地安装方式：皮诺曹浏览器内置ai应用，点击即可安装MAGNeT
+
+        
+22. **提取伴奏和人声 Ultimate Vocal Remover | UVR5（效果第一）
+优点：**分离人声和噪音，提取伴奏
+安装文件下载链接: https://pan.baidu.com/s/1yiejuAU5ViMB8OIi8ZMlog 提取码: thjy
+开源项目地址：https://github.com/Anjok07/ultimatevocalremovergui
+    - 使用教程
+        
+        ### 内有离线模型下载，选择需要的模型下载即可
+        
+        安装方式，放入对应的文件夹即可
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/e23a6c58-5e0b-4613-8dd3-1946844d47fb/Untitled.png)
+        
+        声音分离，音频分离 音轨分离
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/a29fbefa-eb95-4586-b8b0-6c5120572392/Untitled.png)
+        
+        VR Architecture：分离人声和噪音，提取伴奏
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/fa5b45a0-0937-4002-a1c3-855ac82b31a5/Untitled.png)
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/a214dddd-efc2-4818-8103-e7a8d8c527bc/Untitled.png)
+        
+        MDX-Net：可以单一提取鼓的声音。可提取不同乐器声音
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/1afd7f31-b1c0-4db5-b551-236dc5fa4d2c/Untitled.png)
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/15869e37-0294-46a8-a3c3-80f42f3af54d/Untitled.png)
+        
+        Demucs最好的算法：可提取人声，伴奏、乐器等单一音轨，全能可以去掉或提取，任何一种乐器、人声，或者全部伴奏
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/85c8d4f6-c03a-4e95-8b0e-05daba5a1a90/Untitled.png)
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/47b9caff-cc95-4a09-bb20-6103a7eeddb9/Untitled.png)
+        
+23. **AudioSep 音频分离**
+优点：利用AI提示词分离提取声音
+操作更简单，就不需要下载安装，选算法选模型等等设置参数，
+直接上传一段音频，写你需要提取的声音即可，
+例如：伴奏，人声，水滴声，鼓声，吉他声、键盘声，更智能快捷操作
+🔥Huggingface平台AI应用：https://huggingface.co/spaces/Audio-AGI/AudioSep
+    - 详情
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/f184269a-7916-4c62-863d-1fac628197b2/Untitled.png)
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/cab19bc9-3ac0-46dd-b1a4-ab9c68917bff/Untitled.png)
+        
+24. **在线声音编辑器**
+优点：在线免费
+功能：在线录音、移除人声并隔离、乐器分离器、音频切割、合并器
+https://vocalremover.org/zh/voice-recorder
+    - 详情
+        
+        ### **移除人声并隔离**
+        
+        用强大的人工智能算法将声音从音乐中分离出来
+        
+        ### **乐器分离器**
+        
+        用AI驱动的算法将音乐分割成不同的部分
+        
+        ### 变声器
+        
+        通过调整乐调和bpm滑条改变歌曲的音高和节奏
+        
+        ### **歌曲的调和BPM查询器**
+        
+        **分析音乐并查找任何一首歌曲的调、音阶和BPM**
+        
+        ### **音频切割器**
+        
+        能够在线剪切任何音频文件免费编辑器
+        
+        ### **音频合并器**
+        
+        将多个音轨合并成一个。选择您想合并的音频文件
+        
+        ### **在线 录音**
+        
+        通过调整乐调和bpm滑条改变歌曲的音高和节奏
+        
+        ### **为歌曲录制声音**
+        
+        唱歌并录音，调整声音音调并保存完整的歌曲。选择你想唱的卡拉OK曲目
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/88b8538a-d6fc-462e-9ec9-d5dbd8a73ff6/Untitled.png)
+        
+25. **Audio Library｜Youtube 无版权音乐免费下载**
+https://www.youtube.com/@audiolibrary6950/playlists
+
+26. **Voice Cloning AI声音克隆（效果第一）**
+优点：开源免费、上传一段音频，输入文字即可克隆
+    
+    🔥Huggingface平台AI应用：https://huggingface.co/spaces/Kikirilkov/Voice-Cloning
+    
+    - 详情
+        
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a728d40-49a2-4a41-bb52-41def232d873/e0e155d3-bc4a-4f72-bdb6-d8b2d9dd6fed/Untitled.png)
+</code></pre></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://camerarts.github.io/myblog">camerart 的笔记文件</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","camerarts/myblog");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+
+
+</html>
